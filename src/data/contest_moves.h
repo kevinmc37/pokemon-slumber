@@ -5389,7 +5389,7 @@ const struct ContestMove gContestMoves[MOVES_COUNT] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .comboStarterId = 0,
         .comboMoves = {0}
-    },
+    }, /*
 
     [MOVE_DOUBLE_IRON_BASH] =
     {
@@ -5397,7 +5397,7 @@ const struct ContestMove gContestMoves[MOVES_COUNT] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .comboStarterId = 0,
         .comboMoves = {0}
-    },
+    }, */
 };
 
 const struct ContestEffect gContestEffects[] =

@@ -4039,7 +4039,7 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x87,
         .y_offset = 11,
-    },
+    }, /*
     [SPECIES_MELTAN] =
     {
         .size = 0x55,
@@ -4494,7 +4494,7 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x76,
         .y_offset = 10,
-    },
+    }, */
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {
@@ -4837,7 +4837,7 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x66,
         .y_offset = 8,
-    },
+    }, /*
     // Galarian Forms
     [SPECIES_MEOWTH_GALARIAN] =
     {
@@ -5012,7 +5012,7 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x67,
         .y_offset = 8,
-    },
+    }, */
     // Unown
     [SPECIES_UNOWN_B] =
     {
@@ -5356,12 +5356,12 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x66,
         .y_offset = 18,
-    },
+    }, /*
     [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] =
     {
         .size = 0x88,
         .y_offset = 1,
-    },
+    }, */
     // Deerling
     [SPECIES_DEERLING_SUMMER] =
     {
@@ -5964,7 +5964,7 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x88,
         .y_offset = 4,
-    },
+    }, /*
     // Magearna
     [SPECIES_MAGEARNA_ORIGINAL_COLOR] =
     {
@@ -6099,7 +6099,7 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = 0x87,
         .y_offset = 7,
-    },
+    }, */
     // Egg
     [SPECIES_EGG] =
     {

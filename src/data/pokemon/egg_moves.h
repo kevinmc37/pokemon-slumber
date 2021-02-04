@@ -4032,7 +4032,7 @@ const u16 gEggMoves[] = {
     egg_moves(JANGMO_O,
         MOVE_COUNTER,
         MOVE_REVERSAL,
-        MOVE_DRAGON_BREATH),
+        MOVE_DRAGON_BREATH), /*
 
     egg_moves(GROOKEY,
         MOVE_GROWTH,
@@ -4228,7 +4228,7 @@ const u16 gEggMoves[] = {
         MOVE_DOUBLE_TEAM,
         MOVE_DISABLE,
         MOVE_DRAGON_TAIL,
-        MOVE_SUCKER_PUNCH),
+        MOVE_SUCKER_PUNCH), */
 
     egg_moves(RATTATA_ALOLAN,
         MOVE_COUNTER,
@@ -4325,7 +4325,7 @@ const u16 gEggMoves[] = {
         MOVE_SPITE,
         MOVE_SPIT_UP,
         MOVE_STOCKPILE,
-        MOVE_SWALLOW),
+        MOVE_SWALLOW), /*
 
     egg_moves(MEOWTH_GALARIAN,
         MOVE_SPITE,
@@ -4408,7 +4408,7 @@ const u16 gEggMoves[] = {
         MOVE_PSYCH_UP,
         MOVE_FAKE_OUT,
         MOVE_PSYCHO_SHIFT,
-        MOVE_HEAL_PULSE),
+        MOVE_HEAL_PULSE), */
 
     EGG_MOVES_TERMINATOR
 };

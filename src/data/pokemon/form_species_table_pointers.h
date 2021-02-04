@@ -128,7 +128,7 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_MINIOR] = sMiniorFormSpeciesIdTable,
     [SPECIES_MIMIKYU] = sMimikyuFormSpeciesIdTable,
     [SPECIES_NECROZMA] = sNecrozmaFormSpeciesIdTable,
-    [SPECIES_MAGEARNA] = sMagearnaFormSpeciesIdTable,
+    [SPECIES_MAGEARNA] = sMagearnaFormSpeciesIdTable, /*
     [SPECIES_CRAMORANT] = sCramorantFormSpeciesIdTable,
     [SPECIES_TOXTRICITY] = sToxtricityFormSpeciesIdTable,
     [SPECIES_SINISTEA] = sSinisteaFormSpeciesIdTable,
@@ -142,7 +142,7 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_ETERNATUS] = sEternatusFormSpeciesIdTable,
     [SPECIES_URSHIFU] = sUrshifuFormSpeciesIdTable,
     [SPECIES_ZARUDE] = sZarudeFormSpeciesIdTable,
-    [SPECIES_CALYREX] = sCalyrexFormSpeciesIdTable,
+    [SPECIES_CALYREX] = sCalyrexFormSpeciesIdTable, */
     // Megas
     [SPECIES_VENUSAUR_MEGA] = sVenusaurFormSpeciesIdTable,
     [SPECIES_CHARIZARD_MEGA_X] = sCharizardFormSpeciesIdTable,
@@ -213,7 +213,7 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_GRIMER_ALOLAN] = sGrimerFormSpeciesIdTable,
     [SPECIES_MUK_ALOLAN] = sMukFormSpeciesIdTable,
     [SPECIES_EXEGGUTOR_ALOLAN] = sExeggutorFormSpeciesIdTable,
-    [SPECIES_MAROWAK_ALOLAN] = sMarowakFormSpeciesIdTable,
+    [SPECIES_MAROWAK_ALOLAN] = sMarowakFormSpeciesIdTable, /*
     // Galarian Forms
     [SPECIES_MEOWTH_GALARIAN] = sMeowthFormSpeciesIdTable,
     [SPECIES_PONYTA_GALARIAN] = sPonytaFormSpeciesIdTable,
@@ -252,7 +252,7 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_PIKACHU_PARTNER_CAP] = sPikachuFormSpeciesIdTable,
     [SPECIES_PIKACHU_WORLD_CAP] = sPikachuFormSpeciesIdTable,
     // Pichu
-    [SPECIES_PICHU_SPIKY_EARED] = sPichuFormSpeciesIdTable,
+    [SPECIES_PICHU_SPIKY_EARED] = sPichuFormSpeciesIdTable, */
     // Unown
     [SPECIES_UNOWN_B] = sUnownFormSpeciesIdTable,
     [SPECIES_UNOWN_C] = sUnownFormSpeciesIdTable,
@@ -333,7 +333,7 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_BASCULIN_BLUE_STRIPED] = sBasculinFormSpeciesIdTable,
     // Darmanitan
     [SPECIES_DARMANITAN_ZEN_MODE] = sDarmanitanFormSpeciesIdTable,
-    [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = sDarmanitanFormSpeciesIdTable,
+    //[SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = sDarmanitanFormSpeciesIdTable,
     // Deerling
     [SPECIES_DEERLING_SUMMER] = sDeerlingFormSpeciesIdTable,
     [SPECIES_DEERLING_AUTUMN] = sDeerlingFormSpeciesIdTable,
@@ -476,7 +476,7 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     // Necrozma
     [SPECIES_NECROZMA_DUSK_MANE] = sNecrozmaFormSpeciesIdTable,
     [SPECIES_NECROZMA_DAWN_WINGS] = sNecrozmaFormSpeciesIdTable,
-    [SPECIES_NECROZMA_ULTRA] = sNecrozmaFormSpeciesIdTable,
+    [SPECIES_NECROZMA_ULTRA] = sNecrozmaFormSpeciesIdTable, /*
     // Magearna
     [SPECIES_MAGEARNA_ORIGINAL_COLOR] = sMagearnaFormSpeciesIdTable,
     // Cramorant
@@ -515,5 +515,5 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_ZARUDE_DADA] = sZarudeFormSpeciesIdTable,
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = sCalyrexFormSpeciesIdTable,
-    [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexFormSpeciesIdTable,
+    [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexFormSpeciesIdTable, */
 };

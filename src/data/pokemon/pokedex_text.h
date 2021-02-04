@@ -4846,7 +4846,7 @@ const u8 gBlacephalonPokedexText[] = _(
 const u8 gZeraoraPokedexText[] = _(
     "It approaches its enemies at the speed\n"
     "of lightning, then tears them limb from\n"
-    "limb with its sharp claws.");
+    "limb with its sharp claws."); /*
 
 const u8 gMeltanPokedexText[] = _(
     "It melts particles of iron and other metals\n"
@@ -5354,4 +5354,4 @@ const u8 gCalyrexPokedexText[] = _(
     "Calyrex is a merciful Pokémon, capable of\n"
     "providing healing and blessings. It\n"
     "reigned over the Galar region in times\n"
-    "of yore.");
+    "of yore."); */

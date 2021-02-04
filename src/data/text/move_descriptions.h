@@ -2619,7 +2619,7 @@ static const u8 sPLASMA_FISTSDescription[] = _(
 
 static const u8 sPHOTON_GEYSERDescription[] = _(
     "User's highest attack stat\n"
-    "determines its category.");
+    "determines its category."); /*
 
 static const u8 sZIPPY_ZAPDescription[] = _(
     "Electric bursts always go\n"
@@ -2940,7 +2940,7 @@ static const u8 sASTRAL_BARRAGEDescription[] = _(
 
 static const u8 sEERIE_SPELLDescription[] = _(
     "Attacks with psychic power.\n"
-    "Foe's last move has 3 PP cut.");
+    "Foe's last move has 3 PP cut."); */
 
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
@@ -3622,7 +3622,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MULTI_ATTACK - 1] = sMULTI_ATTACKDescription,
     [MOVE_MIND_BLOWN - 1] = sMIND_BLOWNDescription,
     [MOVE_PLASMA_FISTS - 1] = sPLASMA_FISTSDescription,
-    [MOVE_PHOTON_GEYSER - 1] = sPHOTON_GEYSERDescription,
+    [MOVE_PHOTON_GEYSER - 1] = sPHOTON_GEYSERDescription, /*
     [MOVE_ZIPPY_ZAP - 1] = sZIPPY_ZAPDescription,
     [MOVE_SPLISHY_SPLASH - 1] = sSPLISHY_SPLASHDescription,
     [MOVE_FLOATY_FALL - 1] = sFLOATY_FALLDescription,
@@ -3703,5 +3703,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_THUNDEROUS_KICK - 1] = sTHUNDEROUS_KICKDescription,
     [MOVE_GLACIAL_LANCE - 1] = sGLACIAL_LANCEDescription,
     [MOVE_ASTRAL_BARRAGE - 1] = sASTRAL_BARRAGEDescription,
-    [MOVE_EERIE_SPELL - 1] = sEERIE_SPELLDescription,
+    [MOVE_EERIE_SPELL - 1] = sEERIE_SPELLDescription, */
 };

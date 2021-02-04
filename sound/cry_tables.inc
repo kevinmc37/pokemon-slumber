@@ -808,97 +808,97 @@ gCryTable:: @ 869DCF4
 	cry_uncomp Cry_Stakataka
 	cry_uncomp Cry_Blacephalon
 	cry_uncomp Cry_Zeraora
-	cry_uncomp Cry_Meltan
-	cry_uncomp Cry_Melmetal
-	cry_uncomp Cry_Grookey
-	cry_uncomp Cry_Thwackey
-	cry_uncomp Cry_Rillaboom
-	cry_uncomp Cry_Scorbunny
-	cry_uncomp Cry_Raboot
-	cry_uncomp Cry_Cinderace
-	cry_uncomp Cry_Sobble
-	cry_uncomp Cry_Drizzile
-	cry_uncomp Cry_Inteleon
-	cry_uncomp Cry_Skwovet
-	cry_uncomp Cry_Greedent
-	cry_uncomp Cry_Rookidee
-	cry_uncomp Cry_Corvisquire
-	cry_uncomp Cry_Corviknight
-	cry_uncomp Cry_Blipbug
-	cry_uncomp Cry_Dottler
-	cry_uncomp Cry_Orbeetle
-	cry_uncomp Cry_Nickit
-	cry_uncomp Cry_Thievul
-	cry_uncomp Cry_Gossifleur
-	cry_uncomp Cry_Eldegoss
-	cry_uncomp Cry_Wooloo
-	cry_uncomp Cry_Dubwool
-	cry_uncomp Cry_Chewtle
-	cry_uncomp Cry_Drednaw
-	cry_uncomp Cry_Yamper
-	cry_uncomp Cry_Boltund
-	cry_uncomp Cry_Rolycoly
-	cry_uncomp Cry_Carkol
-	cry_uncomp Cry_Coalossal
-	cry_uncomp Cry_Applin
-	cry_uncomp Cry_Flapple
-	cry_uncomp Cry_Appletun
-	cry_uncomp Cry_Silicobra
-	cry_uncomp Cry_Sandaconda
-	cry_uncomp Cry_Cramorant
-	cry_uncomp Cry_Arrokuda
-	cry_uncomp Cry_Barraskewda
-	cry_uncomp Cry_Toxel
-	cry_uncomp Cry_Toxtricity
-	cry_uncomp Cry_Sizzlipede
-	cry_uncomp Cry_Centiskorch
-	cry_uncomp Cry_Clobbopus
-	cry_uncomp Cry_Grapploct
-	cry_uncomp Cry_Sinistea
-	cry_uncomp Cry_Polteageist
-	cry_uncomp Cry_Hatenna
-	cry_uncomp Cry_Hattrem
-	cry_uncomp Cry_Hatterene
-	cry_uncomp Cry_Impidimp
-	cry_uncomp Cry_Morgrem
-	cry_uncomp Cry_Grimmsnarl
-	cry_uncomp Cry_Obstagoon
-	cry_uncomp Cry_Perrserker
-	cry_uncomp Cry_Cursola
-	cry_uncomp Cry_Sirfetchd
-	cry_uncomp Cry_MrRime
-	cry_uncomp Cry_Runerigus
-	cry_uncomp Cry_Milcery
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Falinks
-	cry_uncomp Cry_Pincurchin
-	cry_uncomp Cry_Snom
-	cry_uncomp Cry_Frosmoth
-	cry_uncomp Cry_Stonjourner
-	cry_uncomp Cry_Eiscue
-	cry_uncomp Cry_Indeedee
-	cry_uncomp Cry_Morpeko
-	cry_uncomp Cry_Cufant
-	cry_uncomp Cry_Copperajah
-	cry_uncomp Cry_Dracozolt
-	cry_uncomp Cry_Arctozolt
-	cry_uncomp Cry_Dracovish
-	cry_uncomp Cry_Arctovish
-	cry_uncomp Cry_Duraludon
-	cry_uncomp Cry_Dreepy
-	cry_uncomp Cry_Drakloak
-	cry_uncomp Cry_Dragapult
-	cry_uncomp Cry_Zacian
-	cry_uncomp Cry_Zamazenta
-	cry_uncomp Cry_Eternatus
-	cry_uncomp Cry_Kubfu
-	cry_uncomp Cry_Urshifu
-	cry_uncomp Cry_Zarude
-	cry_uncomp Cry_Regieleki
-	cry_uncomp Cry_Regidrago
-	cry_uncomp Cry_Glastrier
-	cry_uncomp Cry_Spectrier
-	cry_uncomp Cry_Calyrex
+	//cry_uncomp Cry_Meltan
+	//cry_uncomp Cry_Melmetal
+	//cry_uncomp Cry_Grookey
+	//cry_uncomp Cry_Thwackey
+	//cry_uncomp Cry_Rillaboom
+	//cry_uncomp Cry_Scorbunny
+	//cry_uncomp Cry_Raboot
+	//cry_uncomp Cry_Cinderace
+	//cry_uncomp Cry_Sobble
+	//cry_uncomp Cry_Drizzile
+	//cry_uncomp Cry_Inteleon
+	//cry_uncomp Cry_Skwovet
+	//cry_uncomp Cry_Greedent
+	//cry_uncomp Cry_Rookidee
+	//cry_uncomp Cry_Corvisquire
+	//cry_uncomp Cry_Corviknight
+	//cry_uncomp Cry_Blipbug
+	//cry_uncomp Cry_Dottler
+	//cry_uncomp Cry_Orbeetle
+	//cry_uncomp Cry_Nickit
+	//cry_uncomp Cry_Thievul
+	//cry_uncomp Cry_Gossifleur
+	//cry_uncomp Cry_Eldegoss
+	//cry_uncomp Cry_Wooloo
+	//cry_uncomp Cry_Dubwool
+	//cry_uncomp Cry_Chewtle
+	//cry_uncomp Cry_Drednaw
+	//cry_uncomp Cry_Yamper
+	//cry_uncomp Cry_Boltund
+	//cry_uncomp Cry_Rolycoly
+	//cry_uncomp Cry_Carkol
+	//cry_uncomp Cry_Coalossal
+	//cry_uncomp Cry_Applin
+	//cry_uncomp Cry_Flapple
+	//cry_uncomp Cry_Appletun
+	//cry_uncomp Cry_Silicobra
+	//cry_uncomp Cry_Sandaconda
+	//cry_uncomp Cry_Cramorant
+	//cry_uncomp Cry_Arrokuda
+	//cry_uncomp Cry_Barraskewda
+	//cry_uncomp Cry_Toxel
+	//cry_uncomp Cry_Toxtricity
+	//cry_uncomp Cry_Sizzlipede
+	//cry_uncomp Cry_Centiskorch
+	//cry_uncomp Cry_Clobbopus
+	//cry_uncomp Cry_Grapploct
+	//cry_uncomp Cry_Sinistea
+	//cry_uncomp Cry_Polteageist
+	//cry_uncomp Cry_Hatenna
+	//cry_uncomp Cry_Hattrem
+	//cry_uncomp Cry_Hatterene
+	//cry_uncomp Cry_Impidimp
+	//cry_uncomp Cry_Morgrem
+	//cry_uncomp Cry_Grimmsnarl
+	//cry_uncomp Cry_Obstagoon
+	//cry_uncomp Cry_Perrserker
+	//cry_uncomp Cry_Cursola
+	//cry_uncomp Cry_Sirfetchd
+	//cry_uncomp Cry_MrRime
+	//cry_uncomp Cry_Runerigus
+	//cry_uncomp Cry_Milcery
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Falinks
+	//cry_uncomp Cry_Pincurchin
+	//cry_uncomp Cry_Snom
+	//cry_uncomp Cry_Frosmoth
+	//cry_uncomp Cry_Stonjourner
+	//cry_uncomp Cry_Eiscue
+	//cry_uncomp Cry_Indeedee
+	//cry_uncomp Cry_Morpeko
+	//cry_uncomp Cry_Cufant
+	//cry_uncomp Cry_Copperajah
+	//cry_uncomp Cry_Dracozolt
+	//cry_uncomp Cry_Arctozolt
+	//cry_uncomp Cry_Dracovish
+	//cry_uncomp Cry_Arctovish
+	//cry_uncomp Cry_Duraludon
+	//cry_uncomp Cry_Dreepy
+	//cry_uncomp Cry_Drakloak
+	//cry_uncomp Cry_Dragapult
+	//cry_uncomp Cry_Zacian
+	//cry_uncomp Cry_Zamazenta
+	//cry_uncomp Cry_Eternatus
+	//cry_uncomp Cry_Kubfu
+	//cry_uncomp Cry_Urshifu
+	//cry_uncomp Cry_Zarude
+	//cry_uncomp Cry_Regieleki
+	//cry_uncomp Cry_Regidrago
+	//cry_uncomp Cry_Glastrier
+	//cry_uncomp Cry_Spectrier
+	//cry_uncomp Cry_Calyrex
 	@ Megas
 	cry_uncomp Cry_VenusaurMega
 	cry_uncomp Cry_CharizardMegaX
@@ -971,44 +971,44 @@ gCryTable:: @ 869DCF4
 	cry Cry_Exeggutor
 	cry Cry_Marowak
 	@ Galarian Forms
-	cry Cry_Meowth
-	cry Cry_Ponyta
-	cry Cry_Rapidash
-	cry_uncomp Cry_SlowpokeGalarian
-	cry Cry_Slowbro
-	cry Cry_Farfetchd
-	cry Cry_Weezing
-	cry Cry_MrMime
-	cry Cry_Articuno
-	cry Cry_Zapdos
-	cry Cry_Moltres
-	cry Cry_Slowking
-	cry Cry_Corsola
-	cry Cry_Zigzagoon
-	cry Cry_Linoone
-	cry Cry_Darumaka
-	cry Cry_Darmanitan
-	cry Cry_Yamask
-	cry Cry_Stunfisk
+	//cry Cry_Meowth
+	//cry Cry_Ponyta
+	//cry Cry_Rapidash
+	//cry_uncomp Cry_SlowpokeGalarian
+	//cry Cry_Slowbro
+	//cry Cry_Farfetchd
+	//cry Cry_Weezing
+	//cry Cry_MrMime
+	//cry Cry_Articuno
+	//cry Cry_Zapdos
+	//cry Cry_Moltres
+	//cry Cry_Slowking
+	//cry Cry_Corsola
+	//cry Cry_Zigzagoon
+	//cry Cry_Linoone
+	//cry Cry_Darumaka
+	//cry Cry_Darmanitan
+	//cry Cry_Yamask
+	//cry Cry_Stunfisk
 	@ Misc Forms
 	@ Cosplay Pikachu
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
 	@ Cap Pikachu
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
-	cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
+	//cry Cry_Pikachu  @ 869DE14
 	@ Pichu
-	cry Cry_Pichu  @ 869E4F8
+	//cry Cry_Pichu  @ 869E4F8
 	@ Unown
 	cry Cry_Unown  @ 869E654
 	cry Cry_Unown  @ 869E654
@@ -1089,7 +1089,7 @@ gCryTable:: @ 869DCF4
 	cry Cry_Basculin
 	@ Darmanitan
 	cry Cry_Darmanitan
-	cry Cry_Darmanitan
+	//cry Cry_Darmanitan
 	@ Deerling
 	cry Cry_Deerling
 	cry Cry_Deerling
@@ -1234,44 +1234,44 @@ gCryTable:: @ 869DCF4
 	cry_uncomp Cry_NecrozmaDawnWings
 	cry_uncomp Cry_NecrozmaUltra
 	@ Magearna
-	cry_uncomp Cry_Magearna
+	//cry_uncomp Cry_Magearna
 	@ Cramorant
-	cry_uncomp Cry_Cramorant
-	cry_uncomp Cry_Cramorant
+	//cry_uncomp Cry_Cramorant
+	//cry_uncomp Cry_Cramorant
 	@ Toxtricity
-	cry_uncomp Cry_ToxtricityLowKey
+	//cry_uncomp Cry_ToxtricityLowKey
 	@ Sinistea
-	cry_uncomp Cry_Sinistea
+	//cry_uncomp Cry_Sinistea
 	@ Polteageist
-	cry_uncomp Cry_Polteageist
+	//cry_uncomp Cry_Polteageist
 	@ Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
-	cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
+	//cry_uncomp Cry_Alcremie
 	@ Eiscue
-	cry_uncomp Cry_EiscueNoiceFace
+	//cry_uncomp Cry_EiscueNoiceFace
 	@ Indeedee
-	cry_uncomp Cry_IndeedeeFemale
+	//cry_uncomp Cry_IndeedeeFemale
 	@ Morpeko
-	cry_uncomp Cry_MorpekoHangry
+	//cry_uncomp Cry_MorpekoHangry
 	@ Zacian
-	cry_uncomp Cry_ZacianCrownedSword
+	//cry_uncomp Cry_ZacianCrownedSword
 	@ Zamazenta
-	cry_uncomp Cry_ZamazentaCrownedShield
+	//cry_uncomp Cry_ZamazentaCrownedShield
 	@ Eternatus
-	cry_uncomp Cry_EternatusEternamax
+	//cry_uncomp Cry_EternatusEternamax
 	@ Urshifu
-	cry_uncomp Cry_UrshifuRapidStrikeStyle
+	//cry_uncomp Cry_UrshifuRapidStrikeStyle
 	@ Zarude
-	cry_uncomp Cry_Zarude
+	//cry_uncomp Cry_Zarude
 	@ Calyrex
-	cry_uncomp Cry_CalyrexIceRider
-	cry_uncomp Cry_CalyrexShadowRider
+	//cry_uncomp Cry_CalyrexIceRider
+	//cry_uncomp Cry_CalyrexShadowRider
 
 	.align 2
 gCryTable2:: @ 869EF24
@@ -2082,97 +2082,97 @@ gCryTable2:: @ 869EF24
 	cry2_uncomp Cry_Stakataka
 	cry2_uncomp Cry_Blacephalon
 	cry2_uncomp Cry_Zeraora
-	cry2_uncomp Cry_Meltan
-	cry2_uncomp Cry_Melmetal
-	cry2_uncomp Cry_Grookey
-	cry2_uncomp Cry_Thwackey
-	cry2_uncomp Cry_Rillaboom
-	cry2_uncomp Cry_Scorbunny
-	cry2_uncomp Cry_Raboot
-	cry2_uncomp Cry_Cinderace
-	cry2_uncomp Cry_Sobble
-	cry2_uncomp Cry_Drizzile
-	cry2_uncomp Cry_Inteleon
-	cry2_uncomp Cry_Skwovet
-	cry2_uncomp Cry_Greedent
-	cry2_uncomp Cry_Rookidee
-	cry2_uncomp Cry_Corvisquire
-	cry2_uncomp Cry_Corviknight
-	cry2_uncomp Cry_Blipbug
-	cry2_uncomp Cry_Dottler
-	cry2_uncomp Cry_Orbeetle
-	cry2_uncomp Cry_Nickit
-	cry2_uncomp Cry_Thievul
-	cry2_uncomp Cry_Gossifleur
-	cry2_uncomp Cry_Eldegoss
-	cry2_uncomp Cry_Wooloo
-	cry2_uncomp Cry_Dubwool
-	cry2_uncomp Cry_Chewtle
-	cry2_uncomp Cry_Drednaw
-	cry2_uncomp Cry_Yamper
-	cry2_uncomp Cry_Boltund
-	cry2_uncomp Cry_Rolycoly
-	cry2_uncomp Cry_Carkol
-	cry2_uncomp Cry_Coalossal
-	cry2_uncomp Cry_Applin
-	cry2_uncomp Cry_Flapple
-	cry2_uncomp Cry_Appletun
-	cry2_uncomp Cry_Silicobra
-	cry2_uncomp Cry_Sandaconda
-	cry2_uncomp Cry_Cramorant
-	cry2_uncomp Cry_Arrokuda
-	cry2_uncomp Cry_Barraskewda
-	cry2_uncomp Cry_Toxel
-	cry2_uncomp Cry_Toxtricity
-	cry2_uncomp Cry_Sizzlipede
-	cry2_uncomp Cry_Centiskorch
-	cry2_uncomp Cry_Clobbopus
-	cry2_uncomp Cry_Grapploct
-	cry2_uncomp Cry_Sinistea
-	cry2_uncomp Cry_Polteageist
-	cry2_uncomp Cry_Hatenna
-	cry2_uncomp Cry_Hattrem
-	cry2_uncomp Cry_Hatterene
-	cry2_uncomp Cry_Impidimp
-	cry2_uncomp Cry_Morgrem
-	cry2_uncomp Cry_Grimmsnarl
-	cry2_uncomp Cry_Obstagoon
-	cry2_uncomp Cry_Perrserker
-	cry2_uncomp Cry_Cursola
-	cry2_uncomp Cry_Sirfetchd
-	cry2_uncomp Cry_MrRime
-	cry2_uncomp Cry_Runerigus
-	cry2_uncomp Cry_Milcery
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Falinks
-	cry2_uncomp Cry_Pincurchin
-	cry2_uncomp Cry_Snom
-	cry2_uncomp Cry_Frosmoth
-	cry2_uncomp Cry_Stonjourner
-	cry2_uncomp Cry_Eiscue
-	cry2_uncomp Cry_Indeedee
-	cry2_uncomp Cry_Morpeko
-	cry2_uncomp Cry_Cufant
-	cry2_uncomp Cry_Copperajah
-	cry2_uncomp Cry_Dracozolt
-	cry2_uncomp Cry_Arctozolt
-	cry2_uncomp Cry_Dracovish
-	cry2_uncomp Cry_Arctovish
-	cry2_uncomp Cry_Duraludon
-	cry2_uncomp Cry_Dreepy
-	cry2_uncomp Cry_Drakloak
-	cry2_uncomp Cry_Dragapult
-	cry2_uncomp Cry_Zacian
-	cry2_uncomp Cry_Zamazenta
-	cry2_uncomp Cry_Eternatus
-	cry2_uncomp Cry_Kubfu
-	cry2_uncomp Cry_Urshifu
-	cry2_uncomp Cry_Zarude
-	cry2_uncomp Cry_Regieleki
-	cry2_uncomp Cry_Regidrago
-	cry2_uncomp Cry_Glastrier
-	cry2_uncomp Cry_Spectrier
-	cry2_uncomp Cry_Calyrex
+	//cry2_uncomp Cry_Meltan
+	//cry2_uncomp Cry_Melmetal
+	//cry2_uncomp Cry_Grookey
+	//cry2_uncomp Cry_Thwackey
+	//cry2_uncomp Cry_Rillaboom
+	//cry2_uncomp Cry_Scorbunny
+	//cry2_uncomp Cry_Raboot
+	//cry2_uncomp Cry_Cinderace
+	//cry2_uncomp Cry_Sobble
+	//cry2_uncomp Cry_Drizzile
+	//cry2_uncomp Cry_Inteleon
+	//cry2_uncomp Cry_Skwovet
+	//cry2_uncomp Cry_Greedent
+	//cry2_uncomp Cry_Rookidee
+	//cry2_uncomp Cry_Corvisquire
+	//cry2_uncomp Cry_Corviknight
+	//cry2_uncomp Cry_Blipbug
+	//cry2_uncomp Cry_Dottler
+	//cry2_uncomp Cry_Orbeetle
+	//cry2_uncomp Cry_Nickit
+	//cry2_uncomp Cry_Thievul
+	//cry2_uncomp Cry_Gossifleur
+	//cry2_uncomp Cry_Eldegoss
+	//cry2_uncomp Cry_Wooloo
+	//cry2_uncomp Cry_Dubwool
+	//cry2_uncomp Cry_Chewtle
+	//cry2_uncomp Cry_Drednaw
+	//cry2_uncomp Cry_Yamper
+	//cry2_uncomp Cry_Boltund
+	//cry2_uncomp Cry_Rolycoly
+	//cry2_uncomp Cry_Carkol
+	//cry2_uncomp Cry_Coalossal
+	//cry2_uncomp Cry_Applin
+	//cry2_uncomp Cry_Flapple
+	//cry2_uncomp Cry_Appletun
+	//cry2_uncomp Cry_Silicobra
+	//cry2_uncomp Cry_Sandaconda
+	//cry2_uncomp Cry_Cramorant
+	//cry2_uncomp Cry_Arrokuda
+	//cry2_uncomp Cry_Barraskewda
+	//cry2_uncomp Cry_Toxel
+	//cry2_uncomp Cry_Toxtricity
+	//cry2_uncomp Cry_Sizzlipede
+	//cry2_uncomp Cry_Centiskorch
+	//cry2_uncomp Cry_Clobbopus
+	//cry2_uncomp Cry_Grapploct
+	//cry2_uncomp Cry_Sinistea
+	//cry2_uncomp Cry_Polteageist
+	//cry2_uncomp Cry_Hatenna
+	//cry2_uncomp Cry_Hattrem
+	//cry2_uncomp Cry_Hatterene
+	//cry2_uncomp Cry_Impidimp
+	//cry2_uncomp Cry_Morgrem
+	//cry2_uncomp Cry_Grimmsnarl
+	//cry2_uncomp Cry_Obstagoon
+	//cry2_uncomp Cry_Perrserker
+	//cry2_uncomp Cry_Cursola
+	//cry2_uncomp Cry_Sirfetchd
+	//cry2_uncomp Cry_MrRime
+	//cry2_uncomp Cry_Runerigus
+	//cry2_uncomp Cry_Milcery
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Falinks
+	//cry2_uncomp Cry_Pincurchin
+	//cry2_uncomp Cry_Snom
+	//cry2_uncomp Cry_Frosmoth
+	//cry2_uncomp Cry_Stonjourner
+	//cry2_uncomp Cry_Eiscue
+	//cry2_uncomp Cry_Indeedee
+	//cry2_uncomp Cry_Morpeko
+	//cry2_uncomp Cry_Cufant
+	//cry2_uncomp Cry_Copperajah
+	//cry2_uncomp Cry_Dracozolt
+	//cry2_uncomp Cry_Arctozolt
+	//cry2_uncomp Cry_Dracovish
+	//cry2_uncomp Cry_Arctovish
+	//cry2_uncomp Cry_Duraludon
+	//cry2_uncomp Cry_Dreepy
+	//cry2_uncomp Cry_Drakloak
+	//cry2_uncomp Cry_Dragapult
+	//cry2_uncomp Cry_Zacian
+	//cry2_uncomp Cry_Zamazenta
+	//cry2_uncomp Cry_Eternatus
+	//cry2_uncomp Cry_Kubfu
+	//cry2_uncomp Cry_Urshifu
+	//cry2_uncomp Cry_Zarude
+	//cry2_uncomp Cry_Regieleki
+	//cry2_uncomp Cry_Regidrago
+	//cry2_uncomp Cry_Glastrier
+	//cry2_uncomp Cry_Spectrier
+	//cry2_uncomp Cry_Calyrex
 	@ Megas
 	cry2_uncomp Cry_VenusaurMega
 	cry2_uncomp Cry_CharizardMegaX
@@ -2245,44 +2245,44 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Exeggutor
 	cry2 Cry_Marowak
 	@ Galarian Forms
-	cry2 Cry_Meowth
-	cry2 Cry_Ponyta
-	cry2 Cry_Rapidash
-	cry2_uncomp Cry_SlowpokeGalarian
-	cry2 Cry_Slowbro
-	cry2 Cry_Farfetchd
-	cry2 Cry_Weezing
-	cry2 Cry_MrMime
-	cry2 Cry_Articuno
-	cry2 Cry_Zapdos
-	cry2 Cry_Moltres
-	cry2 Cry_Slowking
-	cry2 Cry_Corsola
-	cry2 Cry_Zigzagoon
-	cry2 Cry_Linoone
-	cry2 Cry_Darumaka
-	cry2 Cry_Darmanitan
-	cry2 Cry_Yamask
-	cry2 Cry_Stunfisk
+	//cry2 Cry_Meowth
+	//cry2 Cry_Ponyta
+	//cry2 Cry_Rapidash
+	//cry2_uncomp Cry_SlowpokeGalarian
+	//cry2 Cry_Slowbro
+	//cry2 Cry_Farfetchd
+	//cry2 Cry_Weezing
+	//cry2 Cry_MrMime
+	//cry2 Cry_Articuno
+	//cry2 Cry_Zapdos
+	//cry2 Cry_Moltres
+	//cry2 Cry_Slowking
+	//cry2 Cry_Corsola
+	//cry2 Cry_Zigzagoon
+	//cry2 Cry_Linoone
+	//cry2 Cry_Darumaka
+	//cry2 Cry_Darmanitan
+	//cry2 Cry_Yamask
+	//cry2 Cry_Stunfisk
 	@ Misc Forms
 	@ Cosplay Pikachu
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
 	@ Cap Pikachu
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
-	cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
+	//cry2 Cry_Pikachu  @ 869DE14
 	@ Pichu
-	cry2 Cry_Pichu  @ 869E4F8
+	//cry2 Cry_Pichu  @ 869E4F8
 	@ Unown
 	cry2 Cry_Unown  @ 869E654
 	cry2 Cry_Unown  @ 869E654
@@ -2363,7 +2363,7 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Basculin
 	@ Darmanitan
 	cry2 Cry_Darmanitan
-	cry2 Cry_Darmanitan
+	//cry2 Cry_Darmanitan
 	@ Deerling
 	cry2 Cry_Deerling
 	cry2 Cry_Deerling
@@ -2508,41 +2508,41 @@ gCryTable2:: @ 869EF24
 	cry2_uncomp Cry_NecrozmaDawnWings
 	cry2_uncomp Cry_NecrozmaUltra
 	@ Magearna
-	cry2_uncomp Cry_Magearna
+	//cry2_uncomp Cry_Magearna
 		@ Cramorant
-	cry2_uncomp Cry_Cramorant
-	cry2_uncomp Cry_Cramorant
+	//cry2_uncomp Cry_Cramorant
+	//cry2_uncomp Cry_Cramorant
 	@ Toxtricity
-	cry2_uncomp Cry_ToxtricityLowKey
+	//cry2_uncomp Cry_ToxtricityLowKey
 	@ Sinistea
-	cry2_uncomp Cry_Sinistea
+	//cry2_uncomp Cry_Sinistea
 	@ Polteageist
-	cry2_uncomp Cry_Polteageist
+	//cry2_uncomp Cry_Polteageist
 	@ Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
-	cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
+	//cry2_uncomp Cry_Alcremie
 	@ Eiscue
-	cry2_uncomp Cry_EiscueNoiceFace
+	//cry2_uncomp Cry_EiscueNoiceFace
 	@ Indeedee
-	cry2_uncomp Cry_IndeedeeFemale
+	//cry2_uncomp Cry_IndeedeeFemale
 	@ Morpeko
-	cry2_uncomp Cry_MorpekoHangry
+	//cry2_uncomp Cry_MorpekoHangry
 	@ Zacian
-	cry2_uncomp Cry_ZacianCrownedSword
+	//cry2_uncomp Cry_ZacianCrownedSword
 	@ Zamazenta
-	cry2_uncomp Cry_ZamazentaCrownedShield
+	//cry2_uncomp Cry_ZamazentaCrownedShield
 	@ Eternatus
-	cry2_uncomp Cry_EternatusEternamax
+	//cry2_uncomp Cry_EternatusEternamax
 	@ Urshifu
-	cry2_uncomp Cry_UrshifuRapidStrikeStyle
+	//cry2_uncomp Cry_UrshifuRapidStrikeStyle
 	@ Zarude
-	cry2_uncomp Cry_Zarude
+	//cry2_uncomp Cry_Zarude
 	@ Calyrex
-	cry2_uncomp Cry_CalyrexIceRider
-	cry2_uncomp Cry_CalyrexShadowRider
+	//cry2_uncomp Cry_CalyrexIceRider
+	//cry2_uncomp Cry_CalyrexShadowRider

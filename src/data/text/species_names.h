@@ -806,7 +806,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_NAGANADEL] = _("Naganadel"),
     [SPECIES_STAKATAKA] = _("Stakataka"),
     [SPECIES_BLACEPHALON] = _("Blacefalon"),
-    [SPECIES_ZERAORA] = _("Zeraora"),
+    [SPECIES_ZERAORA] = _("Zeraora"), /*
     [SPECIES_MELTAN] = _("Meltan"),
     [SPECIES_MELMETAL] = _("Melmetal"),
     [SPECIES_GROOKEY] = _("Grookey"),
@@ -897,7 +897,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_REGIDRAGO] = _("Regidrago"),
     [SPECIES_GLASTRIER] = _("Glastrier"),
     [SPECIES_SPECTRIER] = _("Spectrier"),
-    [SPECIES_CALYREX] = _("Calyrex"),
+    [SPECIES_CALYREX] = _("Calyrex"), */
 
     // Megas
     [SPECIES_VENUSAUR_MEGA] = _("Venusaur"),
@@ -970,7 +970,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_GRIMER_ALOLAN] = _("Grimer"),
     [SPECIES_MUK_ALOLAN] = _("Muk"),
     [SPECIES_EXEGGUTOR_ALOLAN] = _("Exeggutor"),
-    [SPECIES_MAROWAK_ALOLAN] = _("Marowak"),
+    [SPECIES_MAROWAK_ALOLAN] = _("Marowak"), /*
 
     // Galarian Forms
     [SPECIES_MEOWTH_GALARIAN] = _("Meowth"),
@@ -1010,7 +1010,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_PIKACHU_PARTNER_CAP] = _("Pikachu"),
     [SPECIES_PIKACHU_WORLD_CAP] = _("Pikachu"),
     // Pichu
-    [SPECIES_PICHU_SPIKY_EARED] = _("Pichu"),
+    [SPECIES_PICHU_SPIKY_EARED] = _("Pichu"), */
     // Unown
     [SPECIES_UNOWN_B] = _("Unown"),
     [SPECIES_UNOWN_C] = _("Unown"),
@@ -1091,7 +1091,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_BASCULIN_BLUE_STRIPED] = _("Basculin"),
     // Darmanitan
     [SPECIES_DARMANITAN_ZEN_MODE] = _("Darmanitan"),
-    [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = _("Darmanitan"),
+    //[SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = _("Darmanitan"),
     // Deerling
     [SPECIES_DEERLING_SUMMER] = _("Deerling"),
     [SPECIES_DEERLING_AUTUMN] = _("Deerling"),
@@ -1234,7 +1234,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     // Necrozma
     [SPECIES_NECROZMA_DUSK_MANE] = _("Necrozma"),
     [SPECIES_NECROZMA_DAWN_WINGS] = _("Necrozma"),
-    [SPECIES_NECROZMA_ULTRA] = _("Necrozma"),
+    [SPECIES_NECROZMA_ULTRA] = _("Necrozma"), /*
     // Magearna
     [SPECIES_MAGEARNA_ORIGINAL_COLOR] = _("Magearna"),
     // Cramorant
@@ -1273,5 +1273,5 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_ZARUDE_DADA] = _("Zarude"),
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = _("Calyrex"),
-    [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
+    [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"), */
 };

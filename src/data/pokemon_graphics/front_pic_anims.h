@@ -7886,7 +7886,7 @@ static const union AnimCmd sAnim_ZERAORA_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
-};
+}; /*
 
 static const union AnimCmd sAnim_MELTAN_1[] =
 {
@@ -8432,7 +8432,7 @@ static const union AnimCmd sAnim_CALYREX_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
-};
+}; */
 
 static const union AnimCmd sAnim_VENUSAUR_MEGA_1[] =
 {
@@ -8840,7 +8840,7 @@ static const union AnimCmd sAnim_MAROWAK_ALOLAN_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
-};
+}; /*
 
 static const union AnimCmd sAnim_MEOWTH_GALARIAN_1[] =
 {
@@ -8954,7 +8954,7 @@ static const union AnimCmd sAnim_STUNFISK_GALARIAN_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
-};
+}; */
 
 static const union AnimCmd sAnim_SHAYMIN_SKY_1[] =
 {
@@ -8972,13 +8972,13 @@ static const union AnimCmd sAnim_DARMANITAN_ZEN_MODE_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
-};
+}; /*
 
 static const union AnimCmd sAnim_DARMANITAN_ZEN_MODE_GALARIAN_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
-};
+}; */
 
 static const union AnimCmd sAnim_TORNADUS_THERIAN_1[] =
 {
@@ -13401,7 +13401,7 @@ static const union AnimCmd *const sAnims_BLACEPHALON[] ={
 static const union AnimCmd *const sAnims_ZERAORA[] ={
     sAnim_GeneralFrame0,
     sAnim_ZERAORA_1,
-};
+}; /*
 
 static const union AnimCmd *const sAnims_MELTAN[] ={
     sAnim_GeneralFrame0,
@@ -13856,7 +13856,7 @@ static const union AnimCmd *const sAnims_SPECTRIER[] ={
 static const union AnimCmd *const sAnims_CALYREX[] ={
     sAnim_GeneralFrame0,
     sAnim_CALYREX_1,
-};
+}; */
 
 static const union AnimCmd *const sAnims_VENUSAUR_MEGA[] ={
     sAnim_GeneralFrame0,
@@ -14196,7 +14196,7 @@ static const union AnimCmd *const sAnims_EXEGGUTOR_ALOLAN[] ={
 static const union AnimCmd *const sAnims_MAROWAK_ALOLAN[] ={
     sAnim_GeneralFrame0,
     sAnim_MAROWAK_ALOLAN_1,
-};
+}; /*
 
 static const union AnimCmd *const sAnims_MEOWTH_GALARIAN[] ={
     sAnim_GeneralFrame0,
@@ -14291,7 +14291,7 @@ static const union AnimCmd *const sAnims_YAMASK_GALARIAN[] ={
 static const union AnimCmd *const sAnims_STUNFISK_GALARIAN[] ={
     sAnim_GeneralFrame0,
     sAnim_STUNFISK_GALARIAN_1,
-};
+}; */
 
 static const union AnimCmd *const sAnims_SHAYMIN_SKY[] ={
     sAnim_GeneralFrame0,
@@ -14306,12 +14306,12 @@ static const union AnimCmd *const sAnims_GIRATINA_ORIGIN[] ={
 static const union AnimCmd *const sAnims_DARMANITAN_ZEN_MODE[] ={
     sAnim_GeneralFrame0,
     sAnim_DARMANITAN_ZEN_MODE_1,
-};
+}; /*
 
 static const union AnimCmd *const sAnims_DARMANITAN_ZEN_MODE_GALARIAN[] ={
     sAnim_GeneralFrame0,
     sAnim_DARMANITAN_ZEN_MODE_GALARIAN_1,
-};
+}; */
 
 static const union AnimCmd *const sAnims_TORNADUS_THERIAN[] ={
     sAnim_GeneralFrame0,
@@ -15223,7 +15223,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(NAGANADEL),
     ANIM_CMD(STAKATAKA),
     ANIM_CMD(BLACEPHALON),
-    ANIM_CMD(ZERAORA),
+    ANIM_CMD(ZERAORA), /*
     ANIM_CMD(MELTAN),
     ANIM_CMD(MELMETAL),
     ANIM_CMD(GROOKEY),
@@ -15314,7 +15314,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(REGIDRAGO),
     ANIM_CMD(GLASTRIER),
     ANIM_CMD(SPECTRIER),
-    ANIM_CMD(CALYREX),
+    ANIM_CMD(CALYREX), */
     ANIM_CMD(VENUSAUR_MEGA),
     ANIM_CMD(CHARIZARD_MEGA_X),
     ANIM_CMD(CHARIZARD_MEGA_Y),
@@ -15382,7 +15382,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(GRIMER_ALOLAN),
     ANIM_CMD(MUK_ALOLAN),
     ANIM_CMD(EXEGGUTOR_ALOLAN),
-    ANIM_CMD(MAROWAK_ALOLAN),
+    ANIM_CMD(MAROWAK_ALOLAN), /*
     ANIM_CMD(MEOWTH_GALARIAN),
     ANIM_CMD(PONYTA_GALARIAN),
     ANIM_CMD(RAPIDASH_GALARIAN),
@@ -15416,7 +15416,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(PIKACHU_ALOLA_CAP, sAnims_PIKACHU),
     ANIM_CMD_FULL(PIKACHU_PARTNER_CAP, sAnims_PIKACHU),
     ANIM_CMD_FULL(PIKACHU_WORLD_CAP, sAnims_PIKACHU),
-    ANIM_CMD_FULL(PICHU_SPIKY_EARED, sAnims_PICHU),
+    ANIM_CMD_FULL(PICHU_SPIKY_EARED, sAnims_PICHU), */
     ANIM_CMD(UNOWN_B),
     ANIM_CMD(UNOWN_C),
     ANIM_CMD(UNOWN_D),
@@ -15483,7 +15483,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(ARCEUS_FAIRY, sAnims_ARCEUS),
     ANIM_CMD_FULL(BASCULIN_BLUE_STRIPED, sAnims_BASCULIN),
     ANIM_CMD(DARMANITAN_ZEN_MODE),
-    ANIM_CMD(DARMANITAN_ZEN_MODE_GALARIAN),
+    //ANIM_CMD(DARMANITAN_ZEN_MODE_GALARIAN),
     ANIM_CMD_FULL(DEERLING_SUMMER, sAnims_DEERLING),
     ANIM_CMD_FULL(DEERLING_AUTUMN, sAnims_DEERLING),
     ANIM_CMD_FULL(DEERLING_WINTER, sAnims_DEERLING),
@@ -15598,7 +15598,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(MIMIKYU_BUSTED),
     ANIM_CMD_FULL(NECROZMA_DUSK_MANE, sAnims_NECROZMA),
     ANIM_CMD_FULL(NECROZMA_DAWN_WINGS, sAnims_NECROZMA),
-    ANIM_CMD_FULL(NECROZMA_ULTRA, sAnims_NECROZMA),
+    ANIM_CMD_FULL(NECROZMA_ULTRA, sAnims_NECROZMA), /*
     ANIM_CMD_FULL(MAGEARNA_ORIGINAL_COLOR, sAnims_MAGEARNA),
     ANIM_CMD_FULL(CRAMORANT_GULPING, sAnims_CRAMORANT),
     ANIM_CMD_FULL(CRAMORANT_GORGING, sAnims_CRAMORANT),
@@ -15622,7 +15622,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(URSHIFU_RAPID_STRIKE_STYLE, sAnims_URSHIFU),
     ANIM_CMD_FULL(ZARUDE_DADA, sAnims_ZARUDE),
     ANIM_CMD_FULL(CALYREX_ICE_RIDER, sAnims_CALYREX),
-    ANIM_CMD_FULL(CALYREX_SHADOW_RIDER, sAnims_CALYREX),
+    ANIM_CMD_FULL(CALYREX_SHADOW_RIDER, sAnims_CALYREX), */
     ANIM_CMD(EGG),
 };
 

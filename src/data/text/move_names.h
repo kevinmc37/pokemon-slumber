@@ -675,7 +675,7 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_MULTI_ATTACK] = _("Multi-Attack"),
     [MOVE_MIND_BLOWN] = _("Mind Blown"),
     [MOVE_PLASMA_FISTS] = _("Plasma Fists"),
-    [MOVE_PHOTON_GEYSER] = _("PhotonGeyser"),
+    [MOVE_PHOTON_GEYSER] = _("PhotonGeyser"), /*
     [MOVE_ZIPPY_ZAP] = _("Zippy Zap"),
     [MOVE_SPLISHY_SPLASH] = _("SplishySplsh"),
     [MOVE_FLOATY_FALL] = _("Floaty Fall"),
@@ -755,5 +755,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_THUNDEROUS_KICK] = _("ThnderusKick"),
     [MOVE_GLACIAL_LANCE] = _("GlacialLance"),
     [MOVE_ASTRAL_BARRAGE] = _("AstrlBarrage"),
-    [MOVE_EERIE_SPELL] = _("Eerie Spell"),
+    [MOVE_EERIE_SPELL] = _("Eerie Spell"), */
 };

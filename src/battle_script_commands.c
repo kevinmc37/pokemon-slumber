@@ -1275,7 +1275,7 @@ static void Cmd_attackcanceler(void)
 
     // Check Protean activation.
     GET_MOVE_TYPE(gCurrentMove, moveType);
-    if ((GetBattlerAbility(gBattlerAttacker) == ABILITY_PROTEAN || GetBattlerAbility(gBattlerAttacker) == ABILITY_LIBERO)
+    if ((GetBattlerAbility(gBattlerAttacker) == ABILITY_PROTEAN/* || GetBattlerAbility(gBattlerAttacker) == ABILITY_LIBERO*/)
         && (gBattleMons[gBattlerAttacker].type1 != moveType || gBattleMons[gBattlerAttacker].type2 != moveType ||
             (gBattleMons[gBattlerAttacker].type3 != moveType && gBattleMons[gBattlerAttacker].type3 != TYPE_MYSTERY))
         && gCurrentMove != MOVE_STRUGGLE)
@@ -11228,14 +11228,14 @@ static void Cmd_settoxicspikes(void)
 static void Cmd_setgastroacid(void)
 {
     switch (gBattleMons[gBattlerTarget].ability)
-    {
+    { /*
     case ABILITY_AS_ONE_ICE_RIDER:
-    case ABILITY_AS_ONE_SHADOW_RIDER:
+    case ABILITY_AS_ONE_SHADOW_RIDER: */
     case ABILITY_BATTLE_BOND:
     case ABILITY_COMATOSE:
-    case ABILITY_DISGUISE:
+    case ABILITY_DISGUISE: /*
     case ABILITY_GULP_MISSILE:
-    case ABILITY_ICE_FACE:
+    case ABILITY_ICE_FACE: */
     case ABILITY_MULTITYPE:
     case ABILITY_POWER_CONSTRUCT:
     case ABILITY_RKS_SYSTEM:

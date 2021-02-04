@@ -807,18 +807,18 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(NAGANADEL, gMonPalette_Naganadel),
     SPECIES_PAL(STAKATAKA, gMonPalette_Stakataka),
     SPECIES_PAL(BLACEPHALON, gMonPalette_Blacephalon),
-    SPECIES_PAL(ZERAORA, gMonPalette_Zeraora),
+    SPECIES_PAL(ZERAORA, gMonPalette_Zeraora), /*
     SPECIES_PAL(MELTAN, gMonPalette_Meltan),
     SPECIES_PAL(MELMETAL, gMonPalette_Melmetal),
     SPECIES_PAL(GROOKEY, gMonPalette_Grookey),
     SPECIES_PAL(THWACKEY, gMonPalette_Thwackey),
-    SPECIES_PAL(RILLABOOM, gMonPalette_DoubleQuestionMark/*gMonPalette_Rillaboom*/),
+    SPECIES_PAL(RILLABOOM, gMonPalette_Rillaboom),
     SPECIES_PAL(SCORBUNNY, gMonPalette_Scorbunny),
     SPECIES_PAL(RABOOT, gMonPalette_Raboot),
     SPECIES_PAL(CINDERACE, gMonPalette_Cinderace),
     SPECIES_PAL(SOBBLE, gMonPalette_Sobble),
     SPECIES_PAL(DRIZZILE, gMonPalette_Drizzile),
-    SPECIES_PAL(INTELEON, gMonPalette_DoubleQuestionMark/*gMonPalette_Inteleon*/),
+    SPECIES_PAL(INTELEON, gMonPalette_Inteleon),
     SPECIES_PAL(SKWOVET, gMonPalette_Skwovet),
     SPECIES_PAL(GREEDENT, gMonPalette_Greedent),
     SPECIES_PAL(ROOKIDEE, gMonPalette_Rookidee),
@@ -894,11 +894,11 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(KUBFU, gMonPalette_Kubfu),
     SPECIES_PAL(URSHIFU, gMonPalette_Urshifu),
     SPECIES_PAL(ZARUDE, gMonPalette_Zarude),
-    SPECIES_PAL(REGIELEKI, gMonPalette_DoubleQuestionMark/*gMonPalette_Regieleki*/),
+    SPECIES_PAL(REGIELEKI, gMonPalette_Regieleki),
     SPECIES_PAL(REGIDRAGO, gMonPalette_Regidrago),
     SPECIES_PAL(GLASTRIER, gMonPalette_Glastrier),
     SPECIES_PAL(SPECTRIER, gMonPalette_Spectrier),
-    SPECIES_PAL(CALYREX, gMonPalette_Calyrex),
+    SPECIES_PAL(CALYREX, gMonPalette_Calyrex), */
 
     SPECIES_PAL(VENUSAUR_MEGA, gMonPalette_VenusaurMega),
     SPECIES_PAL(CHARIZARD_MEGA_X, gMonPalette_CharizardMegaX),
@@ -969,7 +969,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(GRIMER_ALOLAN, gMonPalette_GrimerAlolan),
     SPECIES_PAL(MUK_ALOLAN, gMonPalette_MukAlolan),
     SPECIES_PAL(EXEGGUTOR_ALOLAN, gMonPalette_ExeggutorAlolan),
-    SPECIES_PAL(MAROWAK_ALOLAN, gMonPalette_MarowakAlolan),
+    SPECIES_PAL(MAROWAK_ALOLAN, gMonPalette_MarowakAlolan), /*
 
     SPECIES_PAL(MEOWTH_GALARIAN, gMonPalette_MeowthGalarian),
     SPECIES_PAL(PONYTA_GALARIAN, gMonPalette_PonytaGalarian),
@@ -1007,7 +1007,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(PIKACHU_PARTNER_CAP, gMonPalette_PikachuPartnerCap),
     SPECIES_PAL(PIKACHU_WORLD_CAP, gMonPalette_PikachuWorldCap),
 
-    SPECIES_PAL(PICHU_SPIKY_EARED, gMonPalette_PichuSpikyEared),
+    SPECIES_PAL(PICHU_SPIKY_EARED, gMonPalette_PichuSpikyEared), */
 
     SPECIES_PAL(UNOWN_B, gMonPalette_Unown),
     SPECIES_PAL(UNOWN_C, gMonPalette_Unown),
@@ -1088,7 +1088,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(BASCULIN_BLUE_STRIPED, gMonPalette_BasculinBlueStriped),
 
     SPECIES_PAL(DARMANITAN_ZEN_MODE, gMonPalette_DarmanitanZenMode),
-    SPECIES_PAL(DARMANITAN_ZEN_MODE_GALARIAN, gMonPalette_DarmanitanZenModeGalarian),
+    //SPECIES_PAL(DARMANITAN_ZEN_MODE_GALARIAN, gMonPalette_DarmanitanZenModeGalarian),
 
     SPECIES_PAL(DEERLING_SUMMER, gMonPalette_DeerlingSummer),
     SPECIES_PAL(DEERLING_AUTUMN, gMonPalette_DeerlingAutumn),
@@ -1231,11 +1231,11 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
 
     SPECIES_PAL(NECROZMA_DUSK_MANE, gMonPalette_NecrozmaDuskMane),
     SPECIES_PAL(NECROZMA_DAWN_WINGS, gMonPalette_NecrozmaDawnWings),
-    SPECIES_PAL(NECROZMA_ULTRA, gMonPalette_NecrozmaUltra),
+    SPECIES_PAL(NECROZMA_ULTRA, gMonPalette_NecrozmaUltra), /*
 
     SPECIES_PAL(MAGEARNA_ORIGINAL_COLOR, gMonPalette_MagearnaOriginalColor),
 
-SPECIES_PAL(CRAMORANT_GULPING, gMonPalette_CramorantGulping),
+	SPECIES_PAL(CRAMORANT_GULPING, gMonPalette_CramorantGulping),
     SPECIES_PAL(CRAMORANT_GORGING, gMonPalette_CramorantGorging),
 
     SPECIES_PAL(TOXTRICITY_LOW_KEY, gMonPalette_ToxtricityLowKey),
@@ -1263,14 +1263,14 @@ SPECIES_PAL(CRAMORANT_GULPING, gMonPalette_CramorantGulping),
 
     SPECIES_PAL(ZAMAZENTA_CROWNED_SHIELD, gMonPalette_ZamazentaCrownedShield),
 
-    SPECIES_PAL(ETERNATUS_ETERNAMAX, gMonPalette_Eternatus/*Eternamax*/),
+    SPECIES_PAL(ETERNATUS_ETERNAMAX, gMonPalette_EternatusEternamax),
 
     SPECIES_PAL(URSHIFU_RAPID_STRIKE_STYLE, gMonPalette_UrshifuRapidStrikeStyle),
 
     SPECIES_PAL(ZARUDE_DADA, gMonPalette_ZarudeDada),
 
     SPECIES_PAL(CALYREX_ICE_RIDER, gMonPalette_CalyrexIceRider),
-    SPECIES_PAL(CALYREX_SHADOW_RIDER, gMonPalette_CalyrexShadowRider),
+    SPECIES_PAL(CALYREX_SHADOW_RIDER, gMonPalette_CalyrexShadowRider), */
 
     SPECIES_PAL(EGG, gMonPalette_Egg),
 };

@@ -9694,7 +9694,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-    },
+    }, /*
 
     [NATIONAL_DEX_MELTAN] =
     {
@@ -10786,5 +10786,5 @@ const struct PokedexEntry gPokedexEntries[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-    },
+    }, */
 };

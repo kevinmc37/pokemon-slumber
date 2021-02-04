@@ -219,7 +219,7 @@ static const u8 sPsychicSurgeDescription[] = _("Field becomes weird.");
 static const u8 sMistySurgeDescription[] = _("Field becomes misty.");
 static const u8 sGrassySurgeDescription[] = _("Field becomes grassy.");
 static const u8 sFullMetalBodyDescription[] = _("Prevents stat reduction.");
-static const u8 sNeuroforceDescription[] = _("Ups “supereffective”.");
+static const u8 sNeuroforceDescription[] = _("Ups “supereffective”."); /*
 static const u8 sIntrepidSwordDescription[] = _("Ups Attack on entry.");
 static const u8 sDauntlessShieldDescription[] = _("Ups Defense on entry.");
 static const u8 sLiberoDescription[] = _("Changes type to move's.");
@@ -253,9 +253,9 @@ static const u8 sDragonsMawDescription[] = _("Ups Dragon-type moves.");
 static const u8 sChillingNeighDescription[] = _("KOs boost Attack stat.");
 static const u8 sGrimNeighDescription[] = _("KOs boost Sp. Atk stat.");
 static const u8 sAsOneIceRiderDescription[] = _("Unnerve and Chilling Neigh.");
-static const u8 sAsOneShadowRiderDescription[] = _("Unnerve and Grim Neigh.");
+static const u8 sAsOneShadowRiderDescription[] = _("Unnerve and Grim Neigh."); */
 
-const u8 gAbilityNames[ABILITIES_COUNT_GEN8][ABILITY_NAME_LENGTH + 1] =
+const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
     [ABILITY_NONE] = _("-------"),
     [ABILITY_STENCH] = _("Stench"),
@@ -490,7 +490,7 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN8][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_FULL_METAL_BODY] = _("FullMetalBdy"),
     [ABILITY_SHADOW_SHIELD] = _("ShadowShield"),
     [ABILITY_PRISM_ARMOR] = _("Prism Armor"),
-    [ABILITY_NEUROFORCE] = _("Neuroforce"),
+    [ABILITY_NEUROFORCE] = _("Neuroforce"), /*
     [ABILITY_INTREPID_SWORD] = _("IntrepidSwrd"),
     [ABILITY_DAUNTLESS_SHIELD] = _("DauntlssShld"),
     [ABILITY_LIBERO] = _("Libero"),
@@ -524,10 +524,10 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN8][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_CHILLING_NEIGH] = _("ChillngNeigh"),
     [ABILITY_GRIM_NEIGH] = _("Grim Neigh"),
     [ABILITY_AS_ONE_ICE_RIDER] = _("As One"),
-    [ABILITY_AS_ONE_SHADOW_RIDER] = _("As One"),
+    [ABILITY_AS_ONE_SHADOW_RIDER] = _("As One"), */
 };
 
-const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN8] =
+const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
 {
     [ABILITY_NONE] = sNoneDescription,
     [ABILITY_STENCH] = sStenchDescription,
@@ -762,7 +762,7 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN8] =
     [ABILITY_FULL_METAL_BODY] = sFullMetalBodyDescription,
     [ABILITY_SHADOW_SHIELD] = sMultiscaleDescription,
     [ABILITY_PRISM_ARMOR] = sFilterDescription,
-    [ABILITY_NEUROFORCE] = sNeuroforceDescription,
+    [ABILITY_NEUROFORCE] = sNeuroforceDescription, /*
     [ABILITY_INTREPID_SWORD] = sIntrepidSwordDescription,
     [ABILITY_DAUNTLESS_SHIELD] = sDauntlessShieldDescription,
     [ABILITY_LIBERO] = sLiberoDescription,
@@ -796,5 +796,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN8] =
     [ABILITY_CHILLING_NEIGH] = sChillingNeighDescription,
     [ABILITY_GRIM_NEIGH] = sGrimNeighDescription,
     [ABILITY_AS_ONE_ICE_RIDER] = sAsOneIceRiderDescription,
-    [ABILITY_AS_ONE_SHADOW_RIDER] = sAsOneShadowRiderDescription,
+    [ABILITY_AS_ONE_SHADOW_RIDER] = sAsOneShadowRiderDescription, */
 };

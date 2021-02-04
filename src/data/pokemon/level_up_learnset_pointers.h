@@ -807,7 +807,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_NAGANADEL] = sNaganadelLevelUpLearnset,
     [SPECIES_STAKATAKA] = sStakatakaLevelUpLearnset,
     [SPECIES_BLACEPHALON] = sBlacephalonLevelUpLearnset,
-    [SPECIES_ZERAORA] = sZeraoraLevelUpLearnset,
+    [SPECIES_ZERAORA] = sZeraoraLevelUpLearnset, /*
     [SPECIES_MELTAN] = sMeltanLevelUpLearnset,
     [SPECIES_MELMETAL] = sMelmetalLevelUpLearnset,
     [SPECIES_GROOKEY] = sGrookeyLevelUpLearnset,
@@ -898,7 +898,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_REGIDRAGO] = sRegidragoLevelUpLearnset,
     [SPECIES_GLASTRIER] = sGlastrierLevelUpLearnset,
     [SPECIES_SPECTRIER] = sSpectrierLevelUpLearnset,
-    [SPECIES_CALYREX] = sCalyrexLevelUpLearnset,
+    [SPECIES_CALYREX] = sCalyrexLevelUpLearnset, */
     // Megas
     [SPECIES_VENUSAUR_MEGA] = sVenusaurLevelUpLearnset,
     [SPECIES_CHARIZARD_MEGA_X] = sCharizardLevelUpLearnset,
@@ -969,7 +969,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_GRIMER_ALOLAN] = sGrimerAlolanLevelUpLearnset,
     [SPECIES_MUK_ALOLAN] = sMukAlolanLevelUpLearnset,
     [SPECIES_EXEGGUTOR_ALOLAN] = sExeggutorAlolanLevelUpLearnset,
-    [SPECIES_MAROWAK_ALOLAN] = sMarowakAlolanLevelUpLearnset,
+    [SPECIES_MAROWAK_ALOLAN] = sMarowakAlolanLevelUpLearnset, /*
     // Galarian Forms
     [SPECIES_MEOWTH_GALARIAN] = sMeowthGalarianLevelUpLearnset,
     [SPECIES_PONYTA_GALARIAN] = sPonytaGalarianLevelUpLearnset,
@@ -1008,7 +1008,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_PIKACHU_PARTNER_CAP] = sPikachuLevelUpLearnset,
     [SPECIES_PIKACHU_WORLD_CAP] = sPikachuLevelUpLearnset,
     // Pichu
-    [SPECIES_PICHU_SPIKY_EARED] = sPichuLevelUpLearnset,
+    [SPECIES_PICHU_SPIKY_EARED] = sPichuLevelUpLearnset, */
     // Unown
     [SPECIES_UNOWN_B] = sUnownLevelUpLearnset,
     [SPECIES_UNOWN_C] = sUnownLevelUpLearnset,
@@ -1089,7 +1089,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_BASCULIN_BLUE_STRIPED] = sBasculinLevelUpLearnset,
     // Darmanitan
     [SPECIES_DARMANITAN_ZEN_MODE] = sDarmanitanLevelUpLearnset,
-    [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = sDarmanitanGalarianLevelUpLearnset,
+    //[SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = sDarmanitanGalarianLevelUpLearnset,
     // Deerling
     [SPECIES_DEERLING_SUMMER] = sDeerlingLevelUpLearnset,
     [SPECIES_DEERLING_AUTUMN] = sDeerlingLevelUpLearnset,
@@ -1232,7 +1232,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     // Necrozma
     [SPECIES_NECROZMA_DUSK_MANE] = sNecrozmaLevelUpLearnset,
     [SPECIES_NECROZMA_DAWN_WINGS] = sNecrozmaLevelUpLearnset,
-    [SPECIES_NECROZMA_ULTRA] = sNecrozmaLevelUpLearnset,
+    [SPECIES_NECROZMA_ULTRA] = sNecrozmaLevelUpLearnset, /*
     // Magearna
     [SPECIES_MAGEARNA_ORIGINAL_COLOR] = sMagearnaLevelUpLearnset,
     // Cramorant
@@ -1271,5 +1271,5 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_ZARUDE_DADA] = sZarudeLevelUpLearnset,
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = sCalyrexIceRiderLevelUpLearnset,
-    [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexShadowRiderLevelUpLearnset,
+    [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexShadowRiderLevelUpLearnset, */
 };

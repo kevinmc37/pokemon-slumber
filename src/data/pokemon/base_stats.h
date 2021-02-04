@@ -3124,7 +3124,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_LEVITATE, ABILITY_NEUTRALIZING_GAS},
+            .abilities = {ABILITY_LEVITATE, ABILITY_NONE}, // ABILITY_NEUTRALIZING_GAS
         #else
             .abilities = {ABILITY_LEVITATE, ABILITY_NONE},
         #endif
@@ -3154,7 +3154,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_LEVITATE, ABILITY_NEUTRALIZING_GAS},
+            .abilities = {ABILITY_LEVITATE, ABILITY_NONE}, // ABILITY_NEUTRALIZING_GAS
         #else
             .abilities = {ABILITY_LEVITATE, ABILITY_NONE},
         #endif
@@ -23046,7 +23046,7 @@ const struct BaseStats gBaseStats[] =
         .abilities = {ABILITY_VOLT_ABSORB, ABILITY_NONE},
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
-    },
+    }, /*
 
     [SPECIES_MELTAN] =
     {
@@ -25623,7 +25623,7 @@ const struct BaseStats gBaseStats[] =
         #endif
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
-    },
+    }, */
 
     [SPECIES_VENUSAUR_MEGA] =
     {
@@ -27540,7 +27540,7 @@ const struct BaseStats gBaseStats[] =
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
         .flags = F_ALOLAN_FORM,
-    },
+    }, /*
 
     [SPECIES_MEOWTH_GALARIAN] =
     {
@@ -28495,7 +28495,7 @@ const struct BaseStats gBaseStats[] =
         .abilityHidden = ABILITY_LIGHTNING_ROD,
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
-    },
+    }, */
 
     [SPECIES_UNOWN_B] =
     {
@@ -30228,7 +30228,7 @@ const struct BaseStats gBaseStats[] =
         #endif
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
-    },
+    }, /*
 
     [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] =
     {
@@ -30258,7 +30258,7 @@ const struct BaseStats gBaseStats[] =
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
         .flags = F_GALARIAN_FORM,
-    },
+    }, */
 
     [SPECIES_DEERLING_SUMMER] =
     {
@@ -33561,7 +33561,7 @@ const struct BaseStats gBaseStats[] =
         #endif
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
-    },
+    }, /*
 
     [SPECIES_MAGEARNA_ORIGINAL_COLOR] =
     {
@@ -34239,5 +34239,5 @@ const struct BaseStats gBaseStats[] =
         #endif
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
-    },
+    }, */
 };

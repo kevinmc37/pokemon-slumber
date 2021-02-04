@@ -16491,7 +16491,7 @@ static const struct LevelUpMove sZeraoraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
     LEVEL_UP_END
-};
+}; /*
 
 static const struct LevelUpMove sMeltanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
@@ -18086,7 +18086,7 @@ static const struct LevelUpMove sCalyrexLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_SOLAR_BEAM),
     LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
-};
+}; */
 
 static const struct LevelUpMove sRattataAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -18441,7 +18441,7 @@ static const struct LevelUpMove sMarowakAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_RETALIATE),
     LEVEL_UP_MOVE(65, MOVE_BONE_RUSH),
     LEVEL_UP_END
-};
+}; /*
 
 
 static const struct LevelUpMove sMeowthGalarianLevelUpLearnset[] = {
@@ -18840,7 +18840,7 @@ static const struct LevelUpMove sStunfiskGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_FLAIL),
     LEVEL_UP_MOVE(55, MOVE_FISSURE),
     LEVEL_UP_END
-};
+}; */
 
 static const struct LevelUpMove sDeoxysAttackLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -19110,7 +19110,7 @@ static const struct LevelUpMove sLycanrocDuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ROCK_CLIMB),
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
     LEVEL_UP_END
-};
+}; /*
 
 static const struct LevelUpMove sToxtricityLowKeyLevelUpLearnset[] = {
     //LEVEL_UP_MOVE( 0, MOVE_SPARK),
@@ -19247,4 +19247,4 @@ static const struct LevelUpMove sCalyrexShadowRiderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_SOLAR_BEAM),
     LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
-};
+}; */

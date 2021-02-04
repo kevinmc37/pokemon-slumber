@@ -19181,7 +19181,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM12_TAUNT)
                                             | TMHM(TM25_THUNDER)
                                             | TMHM(TM24_THUNDERBOLT)
-                                            | TMHM(TM06_TOXIC)),
+                                            | TMHM(TM06_TOXIC)), /*
     //TMs of LGPE don't match with USUM
     [SPECIES_MELTAN]      = TMHM_LEARNSET(TMHM(TM10_HIDDEN_POWER)),
 
@@ -20191,7 +20191,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM20_SAFEGUARD)
                                             | TMHM(TM48_SKILL_SWAP)
                                             | TMHM(TM22_SOLARBEAM)
-                                            | TMHM(TM11_SUNNY_DAY)),
+                                            | TMHM(TM11_SUNNY_DAY)), */
 
     [SPECIES_RATTATA_ALOLAN]  = TMHM_LEARNSET(TMHM(TM14_BLIZZARD)
                                                | TMHM(HM01_CUT)
@@ -20440,7 +20440,7 @@ const u32 gTMHMLearnsets[][2] =
                                                    | TMHM(HM04_STRENGTH)
                                                    | TMHM(TM24_THUNDERBOLT)
                                                    | TMHM(TM25_THUNDER)
-                                                   | TMHM(TM06_TOXIC)),
+                                                   | TMHM(TM06_TOXIC)), /*
 
     [SPECIES_MEOWTH_GALARIAN]  = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
                                             | TMHM(TM28_DIG)
@@ -21116,7 +21116,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(HM03_SURF)
                                             | TMHM(TM25_THUNDER)
                                             | TMHM(TM24_THUNDERBOLT)
-                                            | TMHM(TM06_TOXIC)),
+                                            | TMHM(TM06_TOXIC)), */
 
     [SPECIES_UNOWN_B]     = TMHM_LEARNSET(TMHM(TM10_HIDDEN_POWER)),
 
@@ -24529,7 +24529,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM34_SHOCK_WAVE)
                                             | TMHM(TM22_SOLARBEAM)
                                             | TMHM(TM46_THIEF)
-                                            | TMHM(TM06_TOXIC)),
+                                            | TMHM(TM06_TOXIC)), /*
 
     [SPECIES_MAGEARNA_ORIGINAL_COLOR]  = TMHM_LEARNSET(TMHM(TM31_BRICK_BREAK)
                                             | TMHM(TM04_CALM_MIND)
@@ -24750,5 +24750,5 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM48_SKILL_SWAP)
                                             | TMHM(TM22_SOLARBEAM)
                                             | TMHM(TM11_SUNNY_DAY)
-                                            | TMHM(TM12_TAUNT)),
+                                            | TMHM(TM12_TAUNT)), */
 };

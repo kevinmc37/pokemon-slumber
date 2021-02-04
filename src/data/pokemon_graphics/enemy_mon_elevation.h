@@ -105,11 +105,11 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     // Gen 7
     [SPECIES_VIKAVOLT] = 8,
     [SPECIES_CUTIEFLY] = 10,
-    [SPECIES_MINIOR] = 17,
+    [SPECIES_MINIOR] = 17, /*
     // Gen 8
     [SPECIES_CORVISQUIRE] = 6,
     [SPECIES_DRAGAPULT] = 3,
-    [SPECIES_FROSMOTH] = 3,
+    [SPECIES_FROSMOTH] = 3, */
     // Megas
     [SPECIES_LATIAS_MEGA] = 8,
     [SPECIES_LATIOS_MEGA] = 8,
@@ -124,10 +124,10 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_AERODACTYL_MEGA] = 3,
     [SPECIES_GYARADOS_MEGA] = 6,
     [SPECIES_PINSIR_MEGA] = 4,
-    [SPECIES_ALAKAZAM_MEGA] = 7,
+    [SPECIES_ALAKAZAM_MEGA] = 7, /*
     // Galarian Forms
     [SPECIES_WEEZING_GALARIAN] = 3,
-    [SPECIES_YAMASK_GALARIAN] = 4,
+    [SPECIES_YAMASK_GALARIAN] = 4, */
     // Misc Forms
     [SPECIES_GIRATINA_ORIGIN] = 7,
     [SPECIES_THUNDURUS_THERIAN] = 7,
