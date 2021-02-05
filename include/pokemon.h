@@ -311,8 +311,8 @@ u16 GiveMoveToMon(struct Pokemon *mon, u16 move);
 u16 GiveMoveToBattleMon(struct BattlePokemon *mon, u16 move);
 void SetMonMoveSlot(struct Pokemon *mon, u16 move, u8 slot);
 void SetBattleMonMoveSlot(struct BattlePokemon *mon, u16 move, u8 slot);
-void GiveMonInitialMoveset(struct Pokemon *mon);
-void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon);
+void GiveMonInitialMoveset(struct Pokemon *mon, bool8 isShadow); // checks SHADOW_ODDS
+void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon, bool8 isShadow); // checks SHADOW_ODDS
 u16 MonTryLearningNewMove(struct Pokemon *mon, bool8 firstMove);
 void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move);
 void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move);

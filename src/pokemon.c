@@ -2979,6 +2979,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u32 value;
 	u32 shinyValue;
     u16 checksum;
+	bool8 isShadow = FALSE;
 
     ZeroBoxMonData(boxMon);
 	value = Random32();
@@ -3050,6 +3051,12 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
 			} while (shinyValue < SHADOW_ODDS && shinyValue >= SHINY_ODDS);
 		}
     }
+	
+	shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+	if (shinyValue < SHADOW_ODDS && shinyValue >= SHINY_ODDS)
+	{
+		isShadow = TRUE;
+	}
 
     SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
     SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
@@ -3109,7 +3116,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
     }
 
-    GiveBoxMonInitialMoveset(boxMon);
+    GiveBoxMonInitialMoveset(boxMon, isShadow);
 }
 
 void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
@@ -3742,12 +3749,12 @@ void SetBattleMonMoveSlot(struct BattlePokemon *mon, u16 move, u8 slot)
     mon->pp[slot] = gBattleMoves[move].pp;
 }
 
-void GiveMonInitialMoveset(struct Pokemon *mon)
+void GiveMonInitialMoveset(struct Pokemon *mon, bool8 isShadow)
 {
-    GiveBoxMonInitialMoveset(&mon->box);
+    GiveBoxMonInitialMoveset(&mon->box, isShadow);
 }
 
-void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon)
+void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon, bool8 isShadow)
 {
     u16 species = GetBoxMonData(boxMon, MON_DATA_SPECIES, NULL);
     s32 level = GetLevelFromBoxMonExp(boxMon);
@@ -3760,6 +3767,20 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon)
         if (GiveMoveToBoxMon(boxMon, gLevelUpLearnsets[species][i].move) == MON_HAS_MAX_MOVES)
             DeleteFirstMoveAndGiveMoveToBoxMon(boxMon, gLevelUpLearnsets[species][i].move);
     }
+	
+	if (isShadow) // SHADOW_ODDS
+	{
+		if (gBaseStats[species].baseAttack < gBaseStats[species].baseSpAttack)
+		{
+			if (GiveMoveToBoxMon(boxMon, MOVE_SHADOW_WAVE) == MON_HAS_MAX_MOVES)
+				DeleteFirstMoveAndGiveMoveToBoxMon(boxMon, MOVE_SHADOW_WAVE);
+		}
+		else
+		{
+			if (GiveMoveToBoxMon(boxMon, MOVE_SHADOW_BLITZ) == MON_HAS_MAX_MOVES)
+				DeleteFirstMoveAndGiveMoveToBoxMon(boxMon, MOVE_SHADOW_BLITZ);
+		}
+	}
 }
 
 u16 MonTryLearningNewMove(struct Pokemon *mon, bool8 firstMove)

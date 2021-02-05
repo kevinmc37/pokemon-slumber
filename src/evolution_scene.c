@@ -915,7 +915,8 @@ static void Task_EvolutionScene(u8 taskID)
                 else
                 {
                     u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
-                    if (IsHMMove2(move))
+                    //if (IsHMMove2(move))
+					if (gBattleMoves[move].flags & FLAG_SHADOW_MOVE) // Shadow moves can't be forgotten
                     {
                         BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_HMMOVESCANTBEFORGOTTEN - BATTLESTRINGS_ID_ADDER]);
                         BattlePutTextOnWindow(gDisplayedStringBattle, 0);

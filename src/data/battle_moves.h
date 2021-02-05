@@ -10354,6 +10354,258 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .split = SPLIT_SPECIAL,
     },
+	
+	[MOVE_SHADOW_RUSH] =
+    {
+		.power = 90,
+		.accuracy = 100,
+        .effect = EFFECT_RECOIL_25,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE | FLAG_HIGH_CRIT,
+        .split = SPLIT_PHYSICAL,
+    },
+
+	[MOVE_SHADOW_BLAST] =
+    {
+		.power = 80,
+		.accuracy = 100,
+        .effect = EFFECT_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE | FLAG_HIGH_CRIT,
+        .split = SPLIT_PHYSICAL,
+    },
+
+	[MOVE_SHADOW_BLITZ] =
+    {
+		.power = 40,
+		.accuracy = 100,
+        .effect = EFFECT_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_PHYSICAL,
+    },
+
+	[MOVE_SHADOW_BOLT] =
+    {
+		.power = 75,
+		.accuracy = 100,
+        .effect = EFFECT_PARALYZE_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_SPECIAL,
+    },
+
+	[MOVE_SHADOW_BREAK] =
+    {
+		.power = 75,
+		.accuracy = 100,
+        .effect = EFFECT_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_PHYSICAL,
+    },
+
+	[MOVE_SHADOW_CHILL] =
+    {
+		.power = 75,
+		.accuracy = 100,
+        .effect = EFFECT_FREEZE_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_SPECIAL,
+    },
+
+	[MOVE_SHADOW_DOWN] =
+    {
+		.power = 0,
+		.accuracy = 100,
+        .effect = EFFECT_DEFENSE_DOWN_2,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_END] =
+    {
+		.power = 120,
+		.accuracy = 60,
+        .effect = EFFECT_RECOIL_50,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_PHYSICAL,
+    },
+
+	[MOVE_SHADOW_FIRE] =
+    {
+		.power = 75,
+		.accuracy = 100,
+        .effect = EFFECT_BURN_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_SPECIAL,
+    },
+
+	[MOVE_SHADOW_HALF] =
+    {
+		.power = 0,
+		.accuracy = 100,
+        .effect = EFFECT_SUPER_FANG, // SUPER FANG + GIGA IMPACT + FALSE SWIPE
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER, // EVERYONE
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_HOLD] =
+    {
+		.power = 0,
+		.accuracy = 80,
+        .effect = EFFECT_MEAN_LOOK,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_MIST] =
+    {
+		.power = 0,
+		.accuracy = 100,
+        .effect = EFFECT_EVASION_DOWN_2,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_PANIC] =
+    {
+		.power = 0,
+		.accuracy = 60,
+        .effect = EFFECT_CONFUSE,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SOUND | FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_RAVE] =
+    {
+		.power = 70,
+		.accuracy = 100,
+        .effect = EFFECT_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_SPECIAL,
+    },
+
+	[MOVE_SHADOW_SHED] =
+    {
+		.power = 0,
+		.accuracy = 100,
+        .effect = EFFECT_BRICK_BREAK, // + BREAKS SAFEGUARD
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER, // EVERYONE
+        .priority = 0,
+        .flags = FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_SKY] =
+    {
+		.power = 0,
+		.accuracy = 100,
+        .effect = EFFECT_GRASSY_TERRAIN, // 5 TURNS DAMAGES SHADOW POKEMON BY 1/16, BOOSTS SHADOW MOVES 50%, TYPELESS WEATHER BALL X2 DAMAGE
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .flags = FLAG_SHADOW_MOVE,
+        .split = SPLIT_STATUS,
+    },
+
+	[MOVE_SHADOW_STORM] =
+    {
+		.power = 95,
+		.accuracy = 100,
+        .effect = EFFECT_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_SPECIAL,
+    },
+
+	[MOVE_SHADOW_WAVE] =
+    {
+		.power = 50,
+		.accuracy = 100,
+        .effect = EFFECT_HIT,
+        .type = TYPE_MYSTERY,
+        .pp = 99,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHADOW_MOVE,
+        .split = SPLIT_SPECIAL,
+    },
 
     [MOVE_ZIPPY_ZAP] =
     {

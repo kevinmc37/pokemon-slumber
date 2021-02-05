@@ -268,6 +268,7 @@
 #define FLAG_DANCE                  (1 << 21)
 #define FLAG_DMG_IN_AIR             (1 << 22) // X2 dmg on air, always hits target on air
 #define FLAG_HIT_IN_AIR             (1 << 23) // dmg is normal, always hits target on air
+#define FLAG_SHADOW_MOVE            (1 << 24) // Effective against non-shadow Pokémon
 
 // Split defines.
 #define SPLIT_PHYSICAL  0x0
