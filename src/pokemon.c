@@ -2977,10 +2977,11 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u8 speciesName[POKEMON_NAME_LENGTH + 1];
     u32 personality;
     u32 value;
+	u32 shinyValue;
     u16 checksum;
 
     ZeroBoxMonData(boxMon);
-
+	value = Random32();
     if (hasFixedPersonality)
         personality = fixedPersonality;
     else
@@ -2989,16 +2990,31 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     //Determine original trainer ID
     if (otIdType == OT_ID_RANDOM_NO_SHINY) //Pokemon cannot be shiny
     {
-        u32 shinyValue;
-        do
-        {
-            value = Random32();
-            shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
-        } while (shinyValue < SHINY_ODDS);
+        if (FlagGet(FLAG_UNUSED_0x020) == TRUE) // Always Shadow
+		{
+			do
+			{
+				value = Random32();
+				shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+			} while (shinyValue >= SHADOW_ODDS || shinyValue < SHINY_ODDS);
+		}
+		else
+		{
+			do
+			{
+				value = Random32();
+				shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+			} while (shinyValue < SHADOW_ODDS);
+		}
     }
     else if (otIdType == OT_ID_PRESET) //Pokemon has a preset OT ID
     {
         value = fixedOtId;
+		do // no shiny/shadow
+		{
+			personality = Random32();
+			shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+		} while (shinyValue < SHADOW_ODDS);
     }
     else //Player is the OT
     {
@@ -3009,7 +3025,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         
         if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
         {
-            u32 shinyValue;
             u32 rolls = 0;
             do
             {
@@ -3018,6 +3033,22 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                 rolls++;
             } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS);
         }
+		else if (FlagGet(FLAG_UNUSED_0x020) == TRUE) // Always Shadow
+		{
+			do
+			{
+				personality = Random32();
+				shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+			} while (shinyValue >= SHADOW_ODDS || shinyValue < SHINY_ODDS);
+		}
+		else if (FlagGet(FLAG_UNUSED_0x021) == TRUE) // Never Shadow
+		{
+			do
+			{
+				personality = Random32();
+				shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+			} while (shinyValue < SHADOW_ODDS && shinyValue >= SHINY_ODDS);
+		}
     }
 
     SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
@@ -7125,6 +7156,13 @@ const u32 *GetMonSpritePalFromSpeciesAndPersonality(u16 species, u32 otId, u32 p
         else
             return gMonShinyPaletteTable[species].data;
     }
+	else if (shinyValue < SHADOW_ODDS)
+    {
+        if (SpeciesHasGenderDifference[species] && GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+            return gMonShadowPaletteTableFemale[species].data;
+        else
+            return gMonShadowPaletteTable[species].data;
+    }
     else
     {
         if (SpeciesHasGenderDifference[species] && GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
@@ -7153,6 +7191,13 @@ const struct CompressedSpritePalette *GetMonSpritePalStructFromOtIdPersonality(u
             return &gMonShinyPaletteTableFemale[species];
         else
             return &gMonShinyPaletteTable[species];
+    }
+	else if (shinyValue < SHADOW_ODDS)
+    {
+        if (SpeciesHasGenderDifference[species] && GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+            return &gMonShadowPaletteTableFemale[species];
+        else
+            return &gMonShadowPaletteTable[species];
     }
     else
     {

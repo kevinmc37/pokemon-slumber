@@ -2495,7 +2495,7 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
     if (IsBattlerSpriteVisible(battler))
     {
         shinyValue = HIHALF(otId) ^ LOHALF(otId) ^ HIHALF(personality) ^ LOHALF(personality);
-        if (shinyValue < SHINY_ODDS)
+        if (shinyValue < SHADOW_ODDS) // SHINY_ODDS
             isShiny = TRUE;
 
         if (isShiny)

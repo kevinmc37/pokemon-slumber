@@ -294,6 +294,7 @@ const union AnimCmd *const gUnknown_082FF70C[] =
 #define SPECIES_SPRITE(species, sprite) [SPECIES_##species] = {sprite, 0x800, SPECIES_##species}
 #define SPECIES_PAL(species, pal) [SPECIES_##species] = {pal, SPECIES_##species}
 #define SPECIES_SHINY_PAL(species, pal) [SPECIES_##species] = {pal, SPECIES_##species + SPECIES_SHINY_TAG}
+#define SPECIES_SHADOW_PAL(species, pal) [SPECIES_##species] = {pal, SPECIES_##species + SPECIES_SHINY_TAG}
 
 const bool8 SpeciesHasGenderDifference[NUM_SPECIES] =
 {
@@ -306,6 +307,7 @@ const bool8 SpeciesHasGenderDifference[NUM_SPECIES] =
 #include "data/pokemon_graphics/back_pic_table.h"
 #include "data/pokemon_graphics/palette_table.h"
 #include "data/pokemon_graphics/shiny_palette_table.h"
+#include "data/pokemon_graphics/shadow_palette_table.h"
 
 #include "data/trainer_graphics/front_pic_anims.h"
 #include "data/trainer_graphics/front_pic_tables.h"
