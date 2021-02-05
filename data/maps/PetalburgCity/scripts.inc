@@ -93,8 +93,135 @@ PetalburgCity_EventScript_WalkToWallyHouse:: @ 81DC390
 PetalburgCity_EventScript_Boy:: @ 81DC3E6
 	lock
 	faceplayer
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	setflag FLAG_UNUSED_0x020
+	giveitem ITEM_MASTER_BALL, 95
+	giveitem ITEM_RARE_CANDY, 90
+	additem ITEM_HEART_SCALE, 90
+	additem ITEM_KINGS_ROCK, 3
+	additem ITEM_MENTAL_HERB, 15
+	additem ITEM_ACRO_BIKE, 1
+	//additem ITEM_SHINY_CHARM, 1
+	additem ITEM_X_ATTACK, 9
+	additem ITEM_TM00_CONFIDE, 1
+	additem ITEM_TM01_WORK_UP, 1
+	additem ITEM_TM02_DRAGON_CLAW, 1
+	additem ITEM_TM03_PSYSHOCK, 1
+	additem ITEM_TM04_CALM_MIND, 1
+	additem ITEM_TM05_ROAR, 1
+	additem ITEM_TM06_TOXIC, 1
+	additem ITEM_TM07_HAIL, 1
+	additem ITEM_TM08_BULK_UP, 1
+	additem ITEM_TM09_VENOSHOCK, 1
+	additem ITEM_TM10_HIDDEN_POWER, 1
+	additem ITEM_TM11_SUNNY_DAY, 1
+	additem ITEM_TM12_TAUNT, 1
+	additem ITEM_TM13_ICE_BEAM, 1
+	additem ITEM_TM14_BLIZZARD, 1
+	additem ITEM_TM15_HYPER_BEAM, 1
+	additem ITEM_TM16_LIGHT_SCREEN, 1
+	additem ITEM_TM17_PROTECT, 1
+	additem ITEM_TM18_RAIN_DANCE, 1
+	additem ITEM_TM19_ROOST, 1
+	additem ITEM_TM20_SAFEGUARD, 1
+	additem ITEM_TM21_FRUSTRATION, 1
+	additem ITEM_TM22_SOLARBEAM, 1
+	additem ITEM_TM23_SMACK_DOWN, 1
+	additem ITEM_TM24_THUNDERBOLT, 1
+	additem ITEM_TM25_THUNDER, 1
+	additem ITEM_TM26_EARTHQUAKE, 1
+	additem ITEM_TM27_RETURN, 1
+	additem ITEM_TM28_LEECH_LIFE, 1
+	additem ITEM_TM29_PSYCHIC, 1
+	additem ITEM_TM30_SHADOW_BALL, 1
+	additem ITEM_TM31_BRICK_BREAK, 1
+	additem ITEM_TM32_DOUBLE_TEAM, 1
+	additem ITEM_TM33_REFLECT, 1
+	additem ITEM_TM34_SLUDGE_WAVE, 1
+	additem ITEM_TM35_FLAMETHROWER, 1
+	additem ITEM_TM36_SLUDGE_BOMB, 1
+	additem ITEM_TM37_SANDSTORM, 1
+	additem ITEM_TM38_FIRE_BLAST, 1
+	additem ITEM_TM39_ROCK_TOMB, 1
+	additem ITEM_TM40_AERIAL_ACE, 1
+	additem ITEM_TM41_TORMENT, 1
+	additem ITEM_TM42_FACADE, 1
+	additem ITEM_TM43_FLAME_CHARGE, 1
+	additem ITEM_TM44_REST, 1
+	additem ITEM_TM45_ATTRACT, 1
+	additem ITEM_TM46_THIEF, 1
+	additem ITEM_TM47_LOW_SWEEP, 1
+	additem ITEM_TM48_ROUND, 1
+	additem ITEM_TM49_ECHOED_VOICE, 1
+	additem ITEM_TM50_OVERHEAT, 1
+	additem ITEM_TM51_STEEL_WING, 1
+	additem ITEM_TM52_FOCUS_BLAST, 1
+	additem ITEM_TM53_ENERGY_BALL, 1
+	additem ITEM_TM54_FALSE_SWIPE, 1
+	additem ITEM_TM55_SCALD, 1
+	additem ITEM_TM56_ZEN_HEADBUTT, 1
+	additem ITEM_TM57_CHARGE_BEAM, 1
+	additem ITEM_TM58_SEED_BOMB, 1
+	additem ITEM_TM59_BRUTAL_SWING, 1
+	additem ITEM_TM60_POWER_GEM, 1
+	additem ITEM_TM61_WILL_O_WISP, 1
+	additem ITEM_TM62_ACROBATICS, 1
+	additem ITEM_TM63_PLAY_ROUGH, 1
+	additem ITEM_TM64_EXPLOSION, 1
+	additem ITEM_TM65_SHADOW_CLAW, 1
+	additem ITEM_TM66_PAYBACK, 1
+	additem ITEM_TM67_SMART_STRIKE, 1
+	additem ITEM_TM68_GIGA_IMPACT, 1
+	additem ITEM_TM69_ROCK_POLISH, 1
+	additem ITEM_TM70_AURORA_VEIL, 1
+	additem ITEM_TM71_STONE_EDGE, 1
+	additem ITEM_TM72_VOLT_SWITCH, 1
+	additem ITEM_TM73_THUNDER_WAVE, 1
+	additem ITEM_TM74_GYRO_BALL, 1
+	additem ITEM_TM75_SWORDS_DANCE, 1
+	additem ITEM_TM76_REVENGE, 1
+	additem ITEM_TM77_AIR_SLASH, 1
+	additem ITEM_TM78_BULLDOZE, 1
+	additem ITEM_TM79_FROST_BREATH, 1
+	additem ITEM_TM80_ROCK_SLIDE, 1
+	additem ITEM_TM81_X_SCISSOR, 1
+	additem ITEM_TM82_DRAGON_TAIL, 1
+	additem ITEM_TM83_INFESTATION, 1
+	additem ITEM_TM84_POISON_JAB, 1
+	additem ITEM_TM85_DREAM_EATER, 1
+	additem ITEM_TM86_GRASS_KNOT, 1
+	additem ITEM_TM87_SWAGGER, 1
+	additem ITEM_TM88_SLEEP_TALK, 1
+	additem ITEM_TM89_U_TURN, 1
+	additem ITEM_TM90_SUBSTITUTE, 1
+	additem ITEM_TM91_FLASH_CANNON, 1
+	additem ITEM_TM92_TRICK_ROOM, 1
+	additem ITEM_TM93_WILD_CHARGE, 1
+	additem ITEM_TM94_ROCK_BLAST, 1
+	additem ITEM_TM95_SNARL, 1
+	additem ITEM_TM96_NATURE_POWER, 1
+	additem ITEM_TM97_DARK_PULSE, 1
+	additem ITEM_TM98_STOMPING_TANTRUM, 1
+	additem ITEM_TM99_DAZZLING_GLEAM, 1
+	additem ITEM_HM01_CUT, 1
+	additem ITEM_HM02_FLY, 1
+	additem ITEM_HM03_SURF, 1
+	additem ITEM_HM04_STRENGTH, 1
+	additem ITEM_HM05_FLASH, 1
+	additem ITEM_HM06_ROCK_SMASH, 1
+	additem ITEM_HM07_WATERFALL, 1
+	additem ITEM_HM08_DIVE, 1
+	showmonpic SPECIES_ABOMASNOW, 10, 3
 	msgbox PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT
 	closemessage
+	hidemonpic
 	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -237,7 +364,12 @@ PetalburgCity_EventScript_CitySign:: @ 81DC47F
 	end
 
 PetalburgCity_EventScript_Gentleman:: @ 81DC488
+	//
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	clearflag FLAG_UNUSED_0x020
 	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
+	//
 	end
 
 PetalburgCity_EventScript_WallyHouseSign:: @ 81DC491

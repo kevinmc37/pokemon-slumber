@@ -24,7 +24,7 @@ PetalburgCity_Mart_Pokemart_Basic: @ 8207D8C
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_ORANGE_MAIL
+	.2byte ITEM_TM57_CHARGE_BEAM
 	.2byte ITEM_NONE
 	release
 	end

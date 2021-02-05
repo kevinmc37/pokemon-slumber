@@ -364,8 +364,8 @@ static void DestroySplitIcon(void); //Physical/Special Split from BE
 
 //Physical/Special Split from BE
 #define TAG_SPLIT_ICONS 30004
-// static const u16 sSplitIcons_Pal[] = INCBIN_U16("graphics/interface/split_icons.gbapal");
-// static const u32 sSplitIcons_Gfx[] = INCBIN_U32("graphics/interface/split_icons.4bpp.lz");
+static const u16 sSplitIcons_Pal[] = INCBIN_U16("graphics/interface/split_icons.gbapal");
+static const u32 sSplitIcons_Gfx[] = INCBIN_U32("graphics/interface/split_icons.4bpp.lz");
 static const struct OamData sOamData_SplitIcons =
 {
     .size = SPRITE_SIZE(16x16),
@@ -5098,9 +5098,9 @@ static int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, u8 bodyColor, u8 t
         tmMoveId = 0xFF;
         for (i = 0; i < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; i++)
         {
-            if(move == ItemIdToBattleMoveId(ITEM_TM01_FOCUS_PUNCH + i))
+            if(move == ItemIdToBattleMoveId(ITEM_TM00_CONFIDE + i))
             {
-                tmMoveId = (ITEM_TM01_FOCUS_PUNCH + i);
+                tmMoveId = (ITEM_TM00_CONFIDE + i);
                 break;
             }
         }
@@ -6266,8 +6266,8 @@ static bool8 CalculateMoves(void)
     {
         if(CanSpeciesLearnTMHM(species, j))
         {
-            sStatsMovesTMHM[numTMHMMoves] = ItemIdToBattleMoveId(ITEM_TM01_FOCUS_PUNCH + j);
-            sStatsMovesTMHM_ID[numTMHMMoves] = (ITEM_TM01_FOCUS_PUNCH + j);
+            sStatsMovesTMHM[numTMHMMoves] = ItemIdToBattleMoveId(ITEM_TM00_CONFIDE + j);
+            sStatsMovesTMHM_ID[numTMHMMoves] = (ITEM_TM00_CONFIDE + j);
             numTMHMMoves++;
         }
     }

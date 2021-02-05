@@ -6917,7 +6917,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute103Mudkip[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_TREECKO,
+    .species = SPECIES_MAGIKARP,
     }
 };
 
@@ -6961,7 +6961,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute103Treecko[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_MAGIKARP,
     }
 };
 
@@ -7005,7 +7005,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute103Torchic[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_MAGIKARP,
     }
 };
 
@@ -7991,11 +7991,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Tiana[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_Tiana[] = { // defaultMoves
     {
     .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_ZIGZAGOON,
+    .lvl = 30,
+	//.evs = {0, 252, 0, 0, 0, 252},
+    .species = SPECIES_WEEZING,
+    .moves = {MOVE_FALSE_SWIPE, MOVE_FALSE_SWIPE, MOVE_FALSE_SWIPE, MOVE_FALSE_SWIPE}
     },
     {
     .iv = 0,
