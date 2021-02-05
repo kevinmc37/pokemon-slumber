@@ -5174,7 +5174,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_DEOXYS_DEFENSE] =
     {
         .size = 0x87,
-        .y_offset = 6,
+        .y_offset = 8,
     },
     [SPECIES_DEOXYS_SPEED] =
     {
@@ -5185,12 +5185,12 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_BURMY_SANDY_CLOAK] =
     {
         .size = 0x57,
-        .y_offset = 6,
+        .y_offset = 11,
     },
     [SPECIES_BURMY_TRASH_CLOAK] =
     {
         .size = 0x57,
-        .y_offset = 6,
+        .y_offset = 8,
     },
     // Wormadam
     [SPECIES_WORMADAM_SANDY_CLOAK] =
@@ -5225,27 +5225,27 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_ROTOM_HEAT] =
     {
         .size = 0x77,
-        .y_offset = 5,
+        .y_offset = 13,
     },
     [SPECIES_ROTOM_WASH] =
     {
         .size = 0x77,
-        .y_offset = 5,
+        .y_offset = 11,
     },
     [SPECIES_ROTOM_FROST] =
     {
         .size = 0x77,
-        .y_offset = 5,
+        .y_offset = 8,
     },
     [SPECIES_ROTOM_FAN] =
     {
         .size = 0x77,
-        .y_offset = 5,
+        .y_offset = 8,
     },
     [SPECIES_ROTOM_MOW] =
     {
         .size = 0x77,
-        .y_offset = 5,
+        .y_offset = 11,
     },
     // Giratina
     [SPECIES_GIRATINA_ORIGIN] =
@@ -5633,47 +5633,47 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_FURFROU_HEART_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_STAR_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_DIAMOND_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_DEBUTANTE_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_MATRON_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_DANDY_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_LA_REINE_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_KABUKI_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     [SPECIES_FURFROU_PHARAOH_TRIM] =
     {
         .size = 0x78,
-        .y_offset = 0,
+        .y_offset = 3,
     },
     // Meowstic
     [SPECIES_MEOWSTIC_FEMALE] =
