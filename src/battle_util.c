@@ -4742,6 +4742,22 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 effect++;
             }
             break;
+        case ABILITY_STENCH:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && gBattleMons[gBattlerTarget].hp != 0
+             && !gProtectStructs[gBattlerTarget].confusionSelfDmg
+             && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_FLINCH
+             && GetBattlerAbility(gBattlerTarget) != ABILITY_INNER_FOCUS
+             && (gBattleMoves[move].flags & FLAG_KINGS_ROCK_AFFECTED)
+             && (Random() % 100) < 10)
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_FLINCH;
+                BattleScriptPushCursor();
+                SetMoveEffect(FALSE, 0);
+                BattleScriptPop();
+                effect++;
+            }
+            break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
@@ -5870,6 +5886,10 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
             switch (atkHoldEffect)
             {
             case HOLD_EFFECT_FLINCH:
+                if (GetBattlerAbility(gBattlerAttacker) == ABILITY_SERENE_GRACE)
+                {
+                    atkHoldEffectParam *= 2;
+                }
                 if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
                     && TARGET_TURN_DAMAGED
                     && (Random() % 100) < atkHoldEffectParam
