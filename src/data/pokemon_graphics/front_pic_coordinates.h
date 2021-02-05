@@ -5186,12 +5186,12 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_BURMY_SANDY_CLOAK] =
     {
         .size = 0x67,
-        .y_offset = 13,
+        .y_offset = 10,
     },
     [SPECIES_BURMY_TRASH_CLOAK] =
     {
         .size = 0x67,
-        .y_offset = 13,
+        .y_offset = 10,
     },
     // Wormadam
     [SPECIES_WORMADAM_SANDY_CLOAK] =
@@ -5236,12 +5236,12 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_ROTOM_FROST] =
     {
         .size = 0x77,
-        .y_offset = 11,
+        .y_offset = 7,
     },
     [SPECIES_ROTOM_FAN] =
     {
         .size = 0x77,
-        .y_offset = 11,
+        .y_offset = 8,
     },
     [SPECIES_ROTOM_MOW] =
     {

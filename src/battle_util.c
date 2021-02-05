@@ -3667,6 +3667,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                         effect++;
                     }
                     break;
+				case WEATHER_SNOW:
+                    if (!(gBattleWeather & WEATHER_HAIL_ANY))
+                    {
+                        gBattleWeather = WEATHER_HAIL_ANY;
+                        gBattleScripting.animArg1 = B_ANIM_HAIL_CONTINUES;
+                        effect++;
+                    }
+                    break;
                 }
             }
             if (effect)
@@ -6163,7 +6171,7 @@ u8 GetMoveTarget(u16 move, u8 setTarget)
     *(gBattleStruct->moveTarget + gBattlerAttacker) = targetBattler;
 
     return targetBattler;
-}
+} /*
 
 static bool32 HasObedientBitSet(u8 battlerId)
 {
@@ -6173,10 +6181,10 @@ static bool32 HasObedientBitSet(u8 battlerId)
         && GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_SPECIES, NULL) != SPECIES_MEW)
             return TRUE;
     return GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_OBEDIENCE, NULL);
-}
+} */
 
 u8 IsMonDisobedient(void)
-{
+{ /*
     s32 rnd;
     s32 calc;
     u8 obedienceLevel = 0;
@@ -6285,7 +6293,8 @@ u8 IsMonDisobedient(void)
             gBattlescriptCurrInstr = BattleScript_MoveUsedLoafingAround;
             return 1;
         }
-    }
+    } */
+	return 0; // always obedient
 }
 
 u32 GetBattlerHoldEffect(u8 battlerId, bool32 checkNegating)
