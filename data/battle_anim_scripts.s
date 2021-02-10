@@ -696,6 +696,24 @@ gBattleAnims_Moves::
 	.4byte Move_MIND_BLOWN
 	.4byte Move_PLASMA_FISTS
 	.4byte Move_PHOTON_GEYSER
+	.4byte Move_SHADOW_RUSH
+	.4byte Move_SHADOW_BLAST
+	.4byte Move_SHADOW_BLITZ
+	.4byte Move_SHADOW_BOLT
+	.4byte Move_SHADOW_BREAK
+	.4byte Move_SHADOW_CHILL
+	.4byte Move_SHADOW_DOWN
+	.4byte Move_SHADOW_END
+	.4byte Move_SHADOW_FIRE
+	.4byte Move_SHADOW_HALF
+	.4byte Move_SHADOW_HOLD
+	.4byte Move_SHADOW_MIST
+	.4byte Move_SHADOW_PANIC
+	.4byte Move_SHADOW_RAVE
+	.4byte Move_SHADOW_SHED
+	.4byte Move_SHADOW_SKY
+	.4byte Move_SHADOW_STORM
+	.4byte Move_SHADOW_WAVE
 	.4byte Move_ZIPPY_ZAP
 	.4byte Move_SPLISHY_SPLASH
 	.4byte Move_FLOATY_FALL
@@ -13083,6 +13101,60 @@ PhotonGeyserBeam:
 	delay 0x1
 	launchtemplate gPhotonGeyserBeam 0x83, 0x6, 0, -77, ANIM_TARGET, 180, 2, 0
 	return
+
+Move_SHADOW_RUSH::
+	end @to do:
+
+Move_SHADOW_BLAST::
+	end @to do:
+
+Move_SHADOW_BLITZ::
+	end @to do:
+
+Move_SHADOW_BOLT::
+	end @to do:
+
+Move_SHADOW_BREAK::
+	end @to do:
+
+Move_SHADOW_CHILL::
+	end @to do:
+
+Move_SHADOW_DOWN::
+	end @to do:
+
+Move_SHADOW_END::
+	end @to do:
+
+Move_SHADOW_FIRE::
+	end @to do:
+
+Move_SHADOW_HALF::
+	end @to do:
+
+Move_SHADOW_HOLD::
+	end @to do:
+
+Move_SHADOW_MIST::
+	end @to do:
+
+Move_SHADOW_PANIC::
+	end @to do:
+
+Move_SHADOW_RAVE::
+	end @to do:
+
+Move_SHADOW_SHED::
+	end @to do:
+
+Move_SHADOW_SKY::
+	end @to do:
+
+Move_SHADOW_STORM::
+	end @to do:
+
+Move_SHADOW_WAVE::
+	end @to do:
 
 Move_ZIPPY_ZAP::
 	end @to do:
