@@ -7602,23 +7602,23 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
             RecordAbilityBattle(battlerDef, ABILITY_WONDER_GUARD);
         }
     }
-	if (gBattleMoves[move].flags & FLAG_SHADOW_MOVE)
-	{
-		u16 checkShadowMove;
-		u32 j;
-		
-		modifier = UQ_4_12(2.0);
-		
-		for (j = 0; j < MAX_MON_MOVES; j++)
-		{
-			checkShadowMove = gBattleMons[battlerDef].moves[j];
-			if (gBattleMoves[checkShadowMove].flags & FLAG_SHADOW_MOVE)
-			{
-				modifier = UQ_4_12(0.5);
-				break;
-			}
-		}
-	}
+    if (gBattleMoves[move].flags & FLAG_SHADOW_MOVE)
+    {
+        u16 checkShadowMove;
+        u32 j;
+        
+        modifier = UQ_4_12(2.0);
+        
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            checkShadowMove = gBattleMons[battlerDef].moves[j];
+            if (gBattleMoves[checkShadowMove].flags & FLAG_SHADOW_MOVE)
+            {
+                modifier = UQ_4_12(0.5);
+                break;
+            }
+        }
+    }
 
     return modifier;
 }
@@ -7633,10 +7633,10 @@ u16 CalcTypeEffectivenessMultiplier(u16 move, u8 moveType, u8 battlerAtk, u8 bat
         if (gBattleMoves[move].effect == EFFECT_TWO_TYPED_MOVE)
             modifier = CalcTypeEffectivenessMultiplierInternal(move, gBattleMoves[move].argument, battlerAtk, battlerDef, recordAbilities, modifier);
     }
-	else if ((gBattleMoves[move].flags & FLAG_SHADOW_MOVE) && gBattleMoves[move].split != SPLIT_STATUS) // SHADOW_ODDS effectiveness
-	{
-		modifier = CalcTypeEffectivenessMultiplierInternal(move, moveType, battlerAtk, battlerDef, recordAbilities, modifier);
-	}
+    else if ((gBattleMoves[move].flags & FLAG_SHADOW_MOVE) && gBattleMoves[move].split != SPLIT_STATUS) // SHADOW_ODDS effectiveness
+    {
+        modifier = CalcTypeEffectivenessMultiplierInternal(move, moveType, battlerAtk, battlerDef, recordAbilities, modifier);
+    }
 
     if (recordAbilities)
         UpdateMoveResultFlags(modifier);
@@ -7659,23 +7659,23 @@ u16 CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 abilit
         if (abilityDef == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0) && gBattleMoves[move].power)
             modifier = UQ_4_12(0.0);
     }
-	else if ((gBattleMoves[move].flags & FLAG_SHADOW_MOVE) && gBattleMoves[move].split != SPLIT_STATUS) // SHADOW_ODDS effectiveness
-	{
-		u16 checkShadowMove;
-		u32 j;
-		
-		modifier = UQ_4_12(2.0);
-		
-		for (j = 0; j < MAX_MON_MOVES; j++)
-		{
-			checkShadowMove = gBattleMons[speciesDef].moves[j];
-			if (gBattleMoves[checkShadowMove].flags & FLAG_SHADOW_MOVE)
-			{
-				modifier = UQ_4_12(0.5);
-				break;
-			}
-		}
-	}
+    else if ((gBattleMoves[move].flags & FLAG_SHADOW_MOVE) && gBattleMoves[move].split != SPLIT_STATUS) // SHADOW_ODDS effectiveness
+    {
+        u16 checkShadowMove;
+        u32 j;
+        
+        modifier = UQ_4_12(2.0);
+        
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            checkShadowMove = gBattleMons[speciesDef].moves[j];
+            if (gBattleMoves[checkShadowMove].flags & FLAG_SHADOW_MOVE)
+            {
+                modifier = UQ_4_12(0.5);
+                break;
+            }
+        }
+    }
 
     UpdateMoveResultFlags(modifier);
     return modifier;

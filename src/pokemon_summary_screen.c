@@ -2305,7 +2305,7 @@ static bool8 CanReplaceMove(void)
         return TRUE;
     else
         return FALSE; */
-	if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES
+    if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES
         || sMonSummaryScreen->newMove == MOVE_NONE
         || !(gBattleMoves[sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]].flags & FLAG_SHADOW_MOVE)) // Shadow moves can't be forgotten
         return TRUE;

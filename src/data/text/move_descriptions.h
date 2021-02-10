@@ -2631,7 +2631,7 @@ static const u8 sSHADOW_BLASTDescription[] = _(
 
 static const u8 sSHADOW_BLITZDescription[] = _(
     "Throws a tackle while\n"
-    "casting a shadowy aura.");	
+    "casting a shadowy aura."); 
 
 static const u8 sSHADOW_BOLTDescription[] = _(
     "Shadowy thunder attack\n"
@@ -3695,24 +3695,24 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MIND_BLOWN - 1] = sMIND_BLOWNDescription,
     [MOVE_PLASMA_FISTS - 1] = sPLASMA_FISTSDescription,
     [MOVE_PHOTON_GEYSER - 1] = sPHOTON_GEYSERDescription,
-	[MOVE_SHADOW_RUSH - 1] = sSHADOW_RUSHDescription,
-	[MOVE_SHADOW_BLAST - 1] = sSHADOW_BLASTDescription,
-	[MOVE_SHADOW_BLITZ - 1] = sSHADOW_BLITZDescription,
-	[MOVE_SHADOW_BOLT - 1] = sSHADOW_BOLTDescription,
-	[MOVE_SHADOW_BREAK - 1] = sSHADOW_BREAKDescription,
-	[MOVE_SHADOW_CHILL - 1] = sSHADOW_CHILLDescription,
-	[MOVE_SHADOW_DOWN - 1] = sSHADOW_DOWNDescription,
-	[MOVE_SHADOW_END - 1] = sSHADOW_ENDDescription,
-	[MOVE_SHADOW_FIRE - 1] = sSHADOW_FIREDescription,
-	[MOVE_SHADOW_HALF - 1] = sSHADOW_HALFDescription,
-	[MOVE_SHADOW_HOLD - 1] = sSHADOW_HOLDDescription,
-	[MOVE_SHADOW_MIST - 1] = sSHADOW_MISTDescription,
-	[MOVE_SHADOW_PANIC - 1] = sSHADOW_PANICDescription,
-	[MOVE_SHADOW_RAVE - 1] = sSHADOW_RAVEDescription,
-	[MOVE_SHADOW_SHED - 1] = sSHADOW_SHEDDescription,
-	[MOVE_SHADOW_SKY - 1] = sSHADOW_SKYDescription,
-	[MOVE_SHADOW_STORM - 1] = sSHADOW_STORMDescription,
-	[MOVE_SHADOW_WAVE - 1] = sSHADOW_WAVEDescription,
+    [MOVE_SHADOW_RUSH - 1] = sSHADOW_RUSHDescription,
+    [MOVE_SHADOW_BLAST - 1] = sSHADOW_BLASTDescription,
+    [MOVE_SHADOW_BLITZ - 1] = sSHADOW_BLITZDescription,
+    [MOVE_SHADOW_BOLT - 1] = sSHADOW_BOLTDescription,
+    [MOVE_SHADOW_BREAK - 1] = sSHADOW_BREAKDescription,
+    [MOVE_SHADOW_CHILL - 1] = sSHADOW_CHILLDescription,
+    [MOVE_SHADOW_DOWN - 1] = sSHADOW_DOWNDescription,
+    [MOVE_SHADOW_END - 1] = sSHADOW_ENDDescription,
+    [MOVE_SHADOW_FIRE - 1] = sSHADOW_FIREDescription,
+    [MOVE_SHADOW_HALF - 1] = sSHADOW_HALFDescription,
+    [MOVE_SHADOW_HOLD - 1] = sSHADOW_HOLDDescription,
+    [MOVE_SHADOW_MIST - 1] = sSHADOW_MISTDescription,
+    [MOVE_SHADOW_PANIC - 1] = sSHADOW_PANICDescription,
+    [MOVE_SHADOW_RAVE - 1] = sSHADOW_RAVEDescription,
+    [MOVE_SHADOW_SHED - 1] = sSHADOW_SHEDDescription,
+    [MOVE_SHADOW_SKY - 1] = sSHADOW_SKYDescription,
+    [MOVE_SHADOW_STORM - 1] = sSHADOW_STORMDescription,
+    [MOVE_SHADOW_WAVE - 1] = sSHADOW_WAVEDescription,
     [MOVE_ZIPPY_ZAP - 1] = sZIPPY_ZAPDescription,
     [MOVE_SPLISHY_SPLASH - 1] = sSPLISHY_SPLASHDescription,
     [MOVE_FLOATY_FALL - 1] = sFLOATY_FALLDescription,

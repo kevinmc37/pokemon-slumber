@@ -10354,11 +10354,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .split = SPLIT_SPECIAL,
     },
-	
-	[MOVE_SHADOW_RUSH] =
+    
+    [MOVE_SHADOW_RUSH] =
     {
-		.power = 90,
-		.accuracy = 100,
+        .power = 90,
+        .accuracy = 100,
         .effect = EFFECT_RECOIL_25,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10369,10 +10369,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-	[MOVE_SHADOW_BLAST] =
+    [MOVE_SHADOW_BLAST] =
     {
-		.power = 80,
-		.accuracy = 100,
+        .power = 80,
+        .accuracy = 100,
         .effect = EFFECT_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10383,10 +10383,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-	[MOVE_SHADOW_BLITZ] =
+    [MOVE_SHADOW_BLITZ] =
     {
-		.power = 40,
-		.accuracy = 100,
+        .power = 40,
+        .accuracy = 100,
         .effect = EFFECT_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10397,10 +10397,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-	[MOVE_SHADOW_BOLT] =
+    [MOVE_SHADOW_BOLT] =
     {
-		.power = 75,
-		.accuracy = 100,
+        .power = 75,
+        .accuracy = 100,
         .effect = EFFECT_PARALYZE_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10411,10 +10411,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-	[MOVE_SHADOW_BREAK] =
+    [MOVE_SHADOW_BREAK] =
     {
-		.power = 75,
-		.accuracy = 100,
+        .power = 75,
+        .accuracy = 100,
         .effect = EFFECT_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10425,10 +10425,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-	[MOVE_SHADOW_CHILL] =
+    [MOVE_SHADOW_CHILL] =
     {
-		.power = 75,
-		.accuracy = 100,
+        .power = 75,
+        .accuracy = 100,
         .effect = EFFECT_FREEZE_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10439,10 +10439,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-	[MOVE_SHADOW_DOWN] =
+    [MOVE_SHADOW_DOWN] =
     {
-		.power = 0,
-		.accuracy = 100,
+        .power = 0,
+        .accuracy = 100,
         .effect = EFFECT_DEFENSE_DOWN_2,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10453,10 +10453,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_END] =
+    [MOVE_SHADOW_END] =
     {
-		.power = 120,
-		.accuracy = 60,
+        .power = 120,
+        .accuracy = 60,
         .effect = EFFECT_RECOIL_50,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10467,10 +10467,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-	[MOVE_SHADOW_FIRE] =
+    [MOVE_SHADOW_FIRE] =
     {
-		.power = 75,
-		.accuracy = 100,
+        .power = 75,
+        .accuracy = 100,
         .effect = EFFECT_BURN_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10481,10 +10481,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-	[MOVE_SHADOW_HALF] =
+    [MOVE_SHADOW_HALF] =
     {
-		.power = 0,
-		.accuracy = 100,
+        .power = 0,
+        .accuracy = 100,
         .effect = EFFECT_SUPER_FANG, // SUPER FANG + GIGA IMPACT + FALSE SWIPE
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10495,10 +10495,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_HOLD] =
+    [MOVE_SHADOW_HOLD] =
     {
-		.power = 0,
-		.accuracy = 80,
+        .power = 0,
+        .accuracy = 80,
         .effect = EFFECT_MEAN_LOOK,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10509,10 +10509,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_MIST] =
+    [MOVE_SHADOW_MIST] =
     {
-		.power = 0,
-		.accuracy = 100,
+        .power = 0,
+        .accuracy = 100,
         .effect = EFFECT_EVASION_DOWN_2,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10523,10 +10523,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_PANIC] =
+    [MOVE_SHADOW_PANIC] =
     {
-		.power = 0,
-		.accuracy = 60,
+        .power = 0,
+        .accuracy = 60,
         .effect = EFFECT_CONFUSE,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10537,10 +10537,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_RAVE] =
+    [MOVE_SHADOW_RAVE] =
     {
-		.power = 70,
-		.accuracy = 100,
+        .power = 70,
+        .accuracy = 100,
         .effect = EFFECT_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10551,10 +10551,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-	[MOVE_SHADOW_SHED] =
+    [MOVE_SHADOW_SHED] =
     {
-		.power = 0,
-		.accuracy = 100,
+        .power = 0,
+        .accuracy = 100,
         .effect = EFFECT_BRICK_BREAK, // + BREAKS SAFEGUARD
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10565,10 +10565,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_SKY] =
+    [MOVE_SHADOW_SKY] =
     {
-		.power = 0,
-		.accuracy = 100,
+        .power = 0,
+        .accuracy = 100,
         .effect = EFFECT_GRASSY_TERRAIN, // 5 TURNS DAMAGES SHADOW POKEMON BY 1/16, BOOSTS SHADOW MOVES 50%, TYPELESS WEATHER BALL X2 DAMAGE
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10579,10 +10579,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-	[MOVE_SHADOW_STORM] =
+    [MOVE_SHADOW_STORM] =
     {
-		.power = 95,
-		.accuracy = 100,
+        .power = 95,
+        .accuracy = 100,
         .effect = EFFECT_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
@@ -10593,10 +10593,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-	[MOVE_SHADOW_WAVE] =
+    [MOVE_SHADOW_WAVE] =
     {
-		.power = 50,
-		.accuracy = 100,
+        .power = 50,
+        .accuracy = 100,
         .effect = EFFECT_HIT,
         .type = TYPE_MYSTERY,
         .pp = 99,
