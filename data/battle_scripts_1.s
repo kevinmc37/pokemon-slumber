@@ -365,6 +365,72 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectFairyLock
 	.4byte BattleScript_EffectAllySwitch
 	.4byte BattleScript_EffectSleepHit
+	.4byte BattleScript_EffectRecoilMaxHp
+	.4byte BattleScript_EffectRecoilCurrentHp
+	.4byte BattleScript_EffectShadowHalf
+	.4byte BattleScript_EffectShadowShed
+	.4byte BattleScript_EffectShadowTerrain
+
+BattleScript_ShadowTerrainDamage::
+	setbyte gBattleCommunication, 0
+BattleScript_ShadowTerrainLoop:
+	copyarraywithindex gBattlerAttacker, gBattlerByTurnOrder, gBattleCommunication, 0x1
+	shadowterraindamage BS_ATTACKER, BattleScript_ShadowTerrainLoopIncrement
+	printstring STRINGID_SHADOWTERRAINDAMAGE
+	waitmessage 0x40
+BattleScript_ShadowTerrainHpChange:
+	orword gHitMarker, HITMARKER_x20 | HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_x100000
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	tryfaintmon BS_ATTACKER, FALSE, NULL
+BattleScript_ShadowTerrainLoopIncrement::
+	addbyte gBattleCommunication, 0x1
+	jumpifbytenotequal gBattleCommunication, gBattlersCount, BattleScript_ShadowTerrainLoop
+BattleScript_ShadowTerrainLoopEnd::
+	bicword gHitMarker, HITMARKER_x20 | HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_x100000
+	jumpifbyte CMP_EQUAL, gFieldTimers + 12, 0x0, BattleScript_ShadowTerrainEnds
+	end2
+
+BattleScript_EffectShadowShed:
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	breaksidestatuses
+	printstring STRINGID_SIDESTATUSESGONE
+	waitmessage 0x40
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectShadowHalf:
+	setmoveeffect MOVE_EFFECT_RECHARGE | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	seteffectwithchance
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	setbyte sBATTLER, 0x0
+BattleScript_ShadowHalfLoop::
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
+BattleScript_ShadowHalfLoopIncrement::
+	addbyte sBATTLER, 0x1
+	jumpifbytenotequal sBATTLER, gBattlersCount, BattleScript_ShadowHalfLoop
+	printstring STRINGID_SHADOWHALFDAMAGE
+	waitmessage 0x40
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectRecoilCurrentHp:
+	setmoveeffect MOVE_EFFECT_RECOIL_CURRENT_HP | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectHit
+
+BattleScript_EffectRecoilMaxHp:
+	setmoveeffect MOVE_EFFECT_RECOIL_MAX_HP | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectHit
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -1508,6 +1574,7 @@ BattleScript_AttackAccUpTrySpDef::
 BattleScript_AttackAccUpEnd:
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectShadowTerrain:
 BattleScript_EffectMistyTerrain:
 BattleScript_EffectGrassyTerrain:
 BattleScript_EffectElectricTerrain:
@@ -5462,6 +5529,12 @@ BattleScript_PsychicTerrainEnds::
 	playanimation BS_ATTACKER, B_ANIM_RESTORE_BG, NULL
 	end2
 
+BattleScript_ShadowTerrainEnds::
+	printstring STRINGID_SHADOWTERRAINENDS
+	waitmessage 0x40
+	playanimation BS_ATTACKER, B_ANIM_RESTORE_BG, NULL
+	end2
+
 BattleScript_MudSportEnds::
 	printstring STRINGID_MUDSPORTENDS
 	waitmessage 0x40
@@ -6583,6 +6656,8 @@ BattleScript_MoveEffectRecoilWithStatus::
 	copyword gBattleMoveDamage, sSAVED_DMG
 BattleScript_MoveEffectRecoil::
 	jumpifmove MOVE_STRUGGLE, BattleScript_DoRecoil
+	jumpifmove MOVE_SHADOW_RUSH, BattleScript_DoRecoil
+	jumpifmove MOVE_SHADOW_END, BattleScript_DoRecoil
 	jumpifability BS_ATTACKER, ABILITY_ROCK_HEAD, BattleScript_RecoilEnd
 BattleScript_DoRecoil::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_x100000

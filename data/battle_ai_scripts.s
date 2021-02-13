@@ -270,6 +270,11 @@ AI_CheckBadMove_CheckEffect: @ 82DC045
 	if_effect EFFECT_MAGIC_ROOM, AI_CBM_MagicRoom
 	if_effect EFFECT_SOAK, AI_CBM_Soak
 	if_effect EFFECT_LOCK_ON, AI_CBM_LockOn
+	if_effect EFFECT_SHADOW_TERRAIN, AI_CBM_ShadowTerrain
+	end
+
+AI_CBM_ShadowTerrain:
+	if_field_status STATUS_FIELD_SHADOW_TERRAIN, Score_Minus10
 	end
 	
 AI_CBM_LockOn:
@@ -1178,6 +1183,11 @@ AI_CheckViability:
 	if_effect EFFECT_STICKY_WEB, AI_CV_Hazards
 	if_effect EFFECT_TOXIC_SPIKES, AI_CV_Hazards
 	if_effect EFFECT_PERISH_SONG, AI_CV_PerishSong
+	if_effect EFFECT_SHADOW_TERRAIN, AI_CV_ShadowTerrain
+	end
+
+AI_CV_ShadowTerrain:
+	call AI_CV_TerrainExpander
 	end
 	
 AI_CV_PerishSong:
@@ -3529,6 +3539,7 @@ AI_SetupFirstTurn_SetupEffectsToEncourage:
     .2byte EFFECT_QUIVER_DANCE
     .2byte EFFECT_ATTACK_SPATK_UP
     .2byte EFFECT_ATTACK_ACCURACY_UP
+	.2byte EFFECT_SHADOW_TERRAIN
     .2byte EFFECT_PSYCHIC_TERRAIN
     .2byte EFFECT_GRASSY_TERRAIN
     .2byte EFFECT_ELECTRIC_TERRAIN

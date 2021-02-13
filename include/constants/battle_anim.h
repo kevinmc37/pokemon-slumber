@@ -492,6 +492,7 @@
 #define BG_HYPER_BEAM                           75
 #define BG_DYNAMAX_CANNON                       76
 #define BG_AURA_SPHERE                          77
+#define BG_SHADOW_TERRAIN                       78
 
 // table ids for general animations (gBattleAnims_General)
 #define B_ANIM_CASTFORM_CHANGE          0
@@ -527,6 +528,7 @@
 #define B_ANIM_SLIDE_OFFSCREEN          30 // for Emergency Exit
 #define B_ANIM_RESTORE_BG               31 // for Terrain Endings
 #define B_ANIM_TOTEM_FLARE              32 // Totem boosts aura flare
+#define B_ANIM_TERRAIN_SHADOW           33 // Shadow Sky Shadow Terrain
 
 // special animations table (gBattleAnims_Special)
 #define B_ANIM_LVL_UP                   0

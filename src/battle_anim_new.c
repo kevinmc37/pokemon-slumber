@@ -2463,6 +2463,29 @@ const struct SpriteTemplate gPsychicTerrainStarTemplate =
     .callback = AnimOrbitScatter
 };
 
+//shadow terrain
+const struct SpriteTemplate gShadowTerrainOrbsTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .images = NULL,
+    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
+    .callback = AnimOrbitFast
+};
+
+const struct SpriteTemplate gShadowTerrainStarTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPARKLE,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gMoonlightSparkleAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimOrbitScatter
+};
+
 //lunge
 const struct SpriteTemplate gLungeGreenChargeTemplate =
 {

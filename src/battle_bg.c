@@ -1436,6 +1436,9 @@ void DrawTerrainTypeBattleBackground(void)
     case STATUS_FIELD_PSYCHIC_TERRAIN:
         LoadMoveBg(BG_PSYCHIC_TERRAIN);
         break;
+	case STATUS_FIELD_SHADOW_TERRAIN:
+        LoadMoveBg(BG_SHADOW_TERRAIN);
+        break;
     default:
         DrawMainBattleBackground();
         break;

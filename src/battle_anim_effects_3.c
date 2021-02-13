@@ -5472,7 +5472,9 @@ static void AnimRecycle_Step(struct Sprite *sprite)
 void AnimTask_GetWeather(u8 taskId)
 {
     gBattleAnimArgs[ARG_RET_ID] = ANIM_WEATHER_NONE;
-    if (gWeatherMoveAnim & WEATHER_SUN_ANY)
+	if (gFieldStatuses & STATUS_FIELD_SHADOW_TERRAIN)
+        gBattleAnimArgs[ARG_RET_ID] = B_ANIM_TERRAIN_SHADOW;
+    else if (gWeatherMoveAnim & WEATHER_SUN_ANY)
         gBattleAnimArgs[ARG_RET_ID] = ANIM_WEATHER_SUN;
     else if (gWeatherMoveAnim & WEATHER_RAIN_ANY)
         gBattleAnimArgs[ARG_RET_ID] = ANIM_WEATHER_RAIN;

@@ -1955,8 +1955,22 @@ static void Cmd_healthbarupdate(void)
         return;
 
     if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT))
-    {
+    {	
         gActiveBattler = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
+		
+		if (gBattleMoves[gCurrentMove].effect == EFFECT_SHADOW_HALF)
+		{
+			if (!(IsBattlerAlive(gActiveBattler)))
+			{
+				gBattlescriptCurrInstr = BattleScript_ShadowHalfLoopIncrement;
+				return;
+			}
+			
+			if (gBattleMons[gActiveBattler].hp > 1)
+				gBattleMoveDamage = gBattleMons[gActiveBattler].hp / 2;
+			else if (gBattleMons[gActiveBattler].hp == 1)
+				gBattleMoveDamage = gBattleMons[gActiveBattler].hp - 1;
+		}
 
         if (DoesSubstituteBlockMove(gBattlerAttacker, gActiveBattler, gCurrentMove) && gDisableStructs[gActiveBattler].substituteHP && !(gHitMarker & HITMARKER_IGNORE_SUBSTITUTE))
         {
@@ -3066,6 +3080,22 @@ void SetMoveEffect(bool32 primary, u32 certain)
 
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_MoveEffectRecoilWithStatus;
+                break;
+			case MOVE_EFFECT_RECOIL_MAX_HP: // Shadow Rush recoil 1/16 User's Max Hp
+                gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 16;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_MoveEffectRecoil;
+                break;
+			case MOVE_EFFECT_RECOIL_CURRENT_HP: // Shadow End recoil 1/2 User's Current Hp
+					gBattleMoveDamage = gBattleMons[gBattlerAttacker].hp / 2;
+					if (gBattleMoveDamage == 0)
+						gBattleMoveDamage = 1;
+					
+					BattleScriptPush(gBattlescriptCurrInstr + 1);
+					gBattlescriptCurrInstr = BattleScript_MoveEffectRecoil;
                 break;
             case MOVE_EFFECT_THRASH:
                 if (gBattleMons[gEffectBattler].status2 & STATUS2_LOCK_CONFUSE)
@@ -6942,6 +6972,10 @@ static void HandleTerrainMove(u32 moveEffect)
         statusFlag = STATUS_FIELD_PSYCHIC_TERRAIN, timer = &gFieldTimers.psychicTerrainTimer;
         gBattleCommunication[MULTISTRING_CHOOSER] = 3;
         break;
+	case EFFECT_SHADOW_TERRAIN:
+        statusFlag = STATUS_FIELD_SHADOW_TERRAIN, timer = &gFieldTimers.shadowTerrainTimer;
+        gBattleCommunication[MULTISTRING_CHOOSER] = 4;
+        break;
     }
 
     if (gFieldStatuses & statusFlag || statusFlag == 0)
@@ -7098,6 +7132,7 @@ static void Cmd_various(void)
     s32 i, j;
     u8 data[10];
     u32 side, bits;
+	bool8 checkShadowMove = FALSE;
 
     if (gBattleControllerExecFlags)
         return;
@@ -7265,6 +7300,28 @@ static void Cmd_various(void)
             gBattlescriptCurrInstr += 7;
         }
         return;
+	case VARIOUS_SHADOW_TERRAIN_DAMAGE:
+		for (i = 0; i < MAX_MON_MOVES; i++)
+		{
+			if (gBattleMoves[gBattleMons[gActiveBattler].moves[i]].flags & FLAG_SHADOW_MOVE)
+            {
+                checkShadowMove = TRUE;
+                break;
+            }
+		}
+		if (!gBattleMons[gActiveBattler].hp || checkShadowMove)
+        {
+            gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 3);
+        }
+		else
+		{
+			gBattleMoveDamage = gBattleMons[gActiveBattler].maxHP / 16;
+			if (gBattleMoveDamage == 0)
+				gBattleMoveDamage = 1;
+
+			gBattlescriptCurrInstr += 7;
+		}
+		return;
     case VARIOUS_GRAVITY_ON_AIRBORNE_MONS:
         if (gStatuses3[gActiveBattler] & STATUS3_ON_AIR)
             CancelMultiTurnMoves(gActiveBattler);
@@ -8337,6 +8394,30 @@ static void Cmd_various(void)
             gBattlescriptCurrInstr += 7;    // exit if loop failed (failsafe)
         }
         return;
+	case VARIOUS_SHADOW_SHED:
+		for (i = 0; i < 2; i++)
+		{
+			if (gSideTimers[i].reflectTimer || gSideTimers[i].lightscreenTimer || gSideTimers[i].mistTimer
+			|| gSideTimers[i].safeguardTimer || gSideTimers[i].auroraVeilTimer
+			|| gSideTimers[i].tailwindTimer || gSideTimers[i].luckyChantTimer)
+			{
+				gSideStatuses[i] &= ~(SIDE_STATUS_REFLECT);
+				gSideStatuses[i] &= ~(SIDE_STATUS_LIGHTSCREEN);
+				gSideStatuses[i] &= ~(SIDE_STATUS_MIST);
+				gSideStatuses[i] &= ~(SIDE_STATUS_SAFEGUARD);
+				gSideStatuses[i] &= ~(SIDE_STATUS_AURORA_VEIL);
+				gSideStatuses[i] &= ~(SIDE_STATUS_TAILWIND);
+				gSideStatuses[i] &= ~(SIDE_STATUS_LUCKY_CHANT);
+				gSideTimers[i].reflectTimer = 0;
+				gSideTimers[i].lightscreenTimer = 0;
+				gSideTimers[i].mistTimer = 0;
+				gSideTimers[i].safeguardTimer = 0;
+				gSideTimers[i].auroraVeilTimer = 0;
+				gSideTimers[i].tailwindTimer = 0;
+				gSideTimers[i].luckyChantTimer = 0;
+			}
+		}
+        break;
     }
 
     gBattlescriptCurrInstr += 3;

@@ -1510,6 +1510,10 @@ const u32 gBattleAnimBgImage_PsychicTerrain[] = INCBIN_U32("graphics/battle_anim
 const u32 gBattleAnimBgPalette_PsychicTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/psychic_terrain.gbapal.lz");
 const u32 gBattleAnimBgTilemap_PsychicTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/psychic_terrain.bin");
 
+const u32 gBattleAnimBgImage_ShadowTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/shadow_terrain.4bpp.lz");
+const u32 gBattleAnimBgPalette_ShadowTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/shadow_terrain.gbapal.lz");
+const u32 gBattleAnimBgTilemap_ShadowTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/shadow_terrain.bin");
+
 //const u32 gBattleAnimBgImage_RockWrecker[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/rock_wrecker.4bpp.lz");
 //const u32 gBattleAnimBgPalette_RockWrecker[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/rock_wrecker.gbapal.lz");
 //const u32 gBattleAnimBgTilemap_RockWrecker[] = INCBIN_U32("graphics/battle_anims/backgrounds/new/rock_wrecker.bin");

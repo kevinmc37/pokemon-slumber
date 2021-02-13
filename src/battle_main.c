@@ -4970,7 +4970,9 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
 
     if (gBattleMoves[move].effect == EFFECT_WEATHER_BALL)
     {
-        if (WEATHER_HAS_EFFECT)
+		if (gFieldStatuses & STATUS_FIELD_SHADOW_TERRAIN)
+			gBattleStruct->dynamicMoveType = TYPE_MYSTERY | 0x80;
+        else if (WEATHER_HAS_EFFECT)
         {
             if (gBattleWeather & WEATHER_RAIN_ANY)
                 gBattleStruct->dynamicMoveType = TYPE_WATER | 0x80;

@@ -1765,6 +1765,15 @@
 	.4byte \ptr
 	.endm
 
+	.macro breaksidestatuses
+	various BS_ATTACKER, VARIOUS_SHADOW_SHED
+	.endm
+
+	.macro shadowterraindamage battler:req, ptr:req
+	various \battler, VARIOUS_SHADOW_TERRAIN_DAMAGE
+	.4byte \ptr
+	.endm
+
 @ helpful macros
 	.macro setstatchanger stat:req, stages:req, down:req
 	setbyte sSTATCHANGER \stat | \stages << 3 | \down << 7

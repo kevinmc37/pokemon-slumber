@@ -844,6 +844,7 @@ gBattleAnims_General::
 	.4byte General_SlideOffScreen           @ B_ANIM_SLIDE_OFFSCREEN
 	.4byte General_RestoreBg                @ B_ANIM_RESTORE_BG
 	.4byte General_TotemFlare               @ B_ANIM_TOTEM_FLARE
+	.4byte General_TerrainShadow            @ B_ANIM_TERRAIN_SHADOW
 
 	.align 2
 gBattleAnims_Special::
@@ -13148,7 +13149,44 @@ Move_SHADOW_SHED::
 	end @to do:
 
 Move_SHADOW_SKY::
-	end @to do:
+	loadspritegfx ANIM_TAG_ORBS @Recover Ball
+	loadspritegfx ANIM_TAG_GREEN_SPARKLE @Green Star
+	loadspritegfx ANIM_TAG_POISON_BUBBLE @Purple Colour
+	playsewithpan SE_M_HEAL_BELL, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	waitforvisualfinish
+	delay 30
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(27, 0, 13), 12, 5, 1
+	delay 4
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	createsprite gShadowTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gShadowTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gShadowTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gShadowTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gShadowTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gShadowTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 210
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 0, 4, RGB(27, 0, 13)
+	delay 52
+	setarg 7, 0xFFFF
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 0
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 32
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 64
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 96
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 128
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 160
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 192
+	createsprite gShadowTerrainStarTemplate, ANIM_TARGET, 2, 224
+	loopsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET, 0xa, 0x3
+	waitforvisualfinish
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 4, 0, RGB(27, 0, 13)
+	waitforvisualfinish
+	restorebg
+	waitbgfadein
+	end
 
 Move_SHADOW_STORM::
 	end @to do:
@@ -23543,6 +23581,7 @@ Move_WEATHER_BALL:
 	jumpreteq ANIM_WEATHER_RAIN, WeatherBallWater
 	jumpreteq ANIM_WEATHER_SANDSTORM, WeatherBallSandstorm
 	jumpreteq ANIM_WEATHER_HAIL, WeatherBallIce
+	jumpreteq B_ANIM_TERRAIN_SHADOW, WeatherBallShadow
 WeatherBallNormal:
 	loadspritegfx ANIM_TAG_IMPACT
 	createsprite gWeatherBallNormalDownSpriteTemplate, ANIM_TARGET, 2, -30, -100, 25, 1, 0, 0
@@ -23602,6 +23641,23 @@ WeatherBallSandstorm:
 	waitforvisualfinish
 	end
 WeatherBallIce:
+	loadspritegfx ANIM_TAG_HAIL
+	loadspritegfx ANIM_TAG_ICE_CRYSTALS
+	createsprite gWeatherBallIceDownSpriteTemplate, ANIM_TARGET, 2, -30, -100, 25, 25, -40, 20
+	playsewithpan SE_M_HAIL, SOUND_PAN_TARGET
+	delay 10
+	createsprite gWeatherBallIceDownSpriteTemplate, ANIM_TARGET, 2, -30, -100, 25, 25, 40, 0
+	playsewithpan SE_M_HAIL, SOUND_PAN_TARGET
+	delay 10
+	createsprite gWeatherBallIceDownSpriteTemplate, ANIM_TARGET, 2, -30, -100, 25, 25, 0, 0
+	playsewithpan SE_M_HAIL, SOUND_PAN_TARGET
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	call IceCrystalEffectShort
+	waitforvisualfinish
+	end
+WeatherBallShadow:
 	loadspritegfx ANIM_TAG_HAIL
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
 	createsprite gWeatherBallIceDownSpriteTemplate, ANIM_TARGET, 2, -30, -100, 25, 25, -40, 20
@@ -24466,6 +24522,9 @@ General_TerrainElectric:
 	end
 
 General_TerrainPsychic:
+	end
+
+General_TerrainShadow:
 	end
 
 General_RestoreBg:

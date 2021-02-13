@@ -566,7 +566,7 @@ static const u8 sText_Electromagnetism[] = _("electromagnetism");
 static const u8 sText_BufferEnds[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_BUFF1}\nwore off!");
 static const u8 sText_ThroatChopEnds[] = _("{B_ATK_NAME_WITH_PREFIX} can\nuse sound-based moves again!");
 static const u8 sText_TelekinesisEnds[] = _("{B_ATK_NAME_WITH_PREFIX} was freed\nfrom the telekinesis!");
-static const u8 sText_TailwindEnds[] = _("{B_ATK_TEAM1} team's tailwind\n petered out!");
+static const u8 sText_TailwindEnds[] = _("{B_ATK_TEAM1} team's tailwind\npetered out!");
 static const u8 sText_LuckyChantEnds[] = _("{B_ATK_TEAM1} team's Lucky Chant\n wore off!");
 static const u8 sText_TrickRoomEnds[] = _("The twisted dimensions returned to\nnormal!");
 static const u8 sText_WonderRoomEnds[] = _("Wonder Room wore off, and\nDefense and Sp. Def stats returned to normal!");
@@ -584,6 +584,7 @@ static const u8 sText_ElectricTerrainEnds[] = _("The electricity disappeared\nfr
 static const u8 sText_MistyTerrainEnds[] = _("The mist disappeared\nfrom the battlefield.");
 static const u8 sText_PsychicTerrainEnds[] = _("The weirdness disappeared\nfrom the battlefield.");
 static const u8 sText_GrassyTerrainEnds[] = _("The grass disappeared\nfrom the battlefield.");
+static const u8 sText_ShadowTerrainEnds[] = _("The darkness disappeared\nfrom the battlefield.");
 static const u8 sText_TargetsStatWasMaxedOut[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY} maxed\nits {B_BUFF1}!");
 static const u8 sText_PoisonHealHpUp[] = _("The poisoning healed {B_ATK_NAME_WITH_PREFIX}\na little bit!");
 static const u8 sText_BadDreamsDmg[] = _("{B_DEF_NAME_WITH_PREFIX} is tormented\nby {B_ATK_ABILITY}!");
@@ -629,6 +630,7 @@ static const u8 sText_TerrainBecomesMisty[] = _("Mist swirled about\nthe battlef
 static const u8 sText_TerrainBecomesGrassy[] = _("Grass grew to cover\nthe battlefield!");
 static const u8 sText_TerrainBecomesElectric[] = _("An electric current runs across\nthe battlefield!");
 static const u8 sText_TerrainBecomesPsychic[] = _("The battlefield got weird!");
+static const u8 sText_TerrainBecomesShadowy[] = _("The battlefield got flooded\nwith darkness!");
 static const u8 sText_TargetElectrified[] = _("The {B_DEF_NAME_WITH_PREFIX}'s moves\nhave been electrified!");
 static const u8 sText_AssaultVestDoesntAllow[] = _("The effects of the {B_LAST_ITEM} prevent status\nmoves from being used!\p");
 static const u8 sText_GravityPreventsUsage[] = _("{B_ATK_NAME_WITH_PREFIX} can't use {B_CURRENT_MOVE}\nbecause of gravity!\p");
@@ -654,6 +656,7 @@ static const u8 sText_MistyTerrainPreventsStatus[] = _("{B_DEF_NAME_WITH_PREFIX}
 static const u8 sText_GrassyTerrainHeals[] = _("{B_ATK_NAME_WITH_PREFIX} is healed\nby the grassy terrain!");
 static const u8 sText_ElectricTerrainPreventsSleep[] = _("{B_DEF_NAME_WITH_PREFIX} surrounds itself\nwith electrified terrain!");
 static const u8 sText_PsychicTerrainPreventsPriority[] = _("{B_DEF_NAME_WITH_PREFIX} surrounds itself\nwith psychic terrain!");
+static const u8 sText_ShadowTerrainDamage[] = _("{B_ATK_NAME_WITH_PREFIX} is damaged\nby the shadowy terrain!");
 static const u8 sText_SafetyGooglesProtected[] = _("{B_DEF_NAME_WITH_PREFIX} is not affected\nthanks to its {B_LAST_ITEM}!");
 static const u8 sText_FlowerVeilProtected[] = _("{B_DEF_NAME_WITH_PREFIX} surrounded itself\nwith a veil of petals!");
 static const u8 sText_SweetVeilProtected[] = _("{B_DEF_NAME_WITH_PREFIX} surrounded itself\nwith a veil of sweetness!");
@@ -691,6 +694,8 @@ static const u8 sText_BattlerAbilityRaisedStat[] = _("{B_SCR_ACTIVE_NAME_WITH_PR
 static const u8 sText_ASandstormKickedUp[] = _("A sandstorm kicked up!");
 static const u8 sText_PkmnsWillPerishIn3Turns[] = _("Both Pokémon will perish\nin three turns!");
 static const u8 sText_AbilityRaisedStatDrastically[] = _("{B_DEF_ABILITY} raised {B_DEF_NAME_WITH_PREFIX}'s\n{B_BUFF1} drastically!");
+static const u8 sText_ShadowHalfDamage[] = _("{B_ATK_NAME_WITH_PREFIX}'s shadowness damaged\nall Pokémon!");
+static const u8 sText_SideStatusesGone[] = _("The effects of all side\nstatuses disappeared.");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1245,11 +1250,16 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_AURABREAKENTERS - 12] = sText_AuraBreakActivates,
     [STRINGID_COMATOSEENTERS - 12] = sText_ComatoseActivates,
     [STRINGID_SCREENCLEANERENTERS - 12] = sText_ScreenCleanerActivates,
+	[STRINGID_SHADOWHALFDAMAGE - 12] = sText_ShadowHalfDamage,
+	[STRINGID_SIDESTATUSESGONE - 12] = sText_SideStatusesGone,
+	[STRINGID_SHADOWTERRAINENDS - 12] = sText_ShadowTerrainEnds,
+	[STRINGID_TERRAINBECOMESSHADOWY - 12] = sText_TerrainBecomesShadowy,
+	[STRINGID_SHADOWTERRAINDAMAGE - 12] = sText_ShadowTerrainDamage,
 };
 
 const u16 gTerrainStringIds[] =
 {
-    STRINGID_TERRAINBECOMESMISTY, STRINGID_TERRAINBECOMESGRASSY, STRINGID_TERRAINBECOMESELECTRIC, STRINGID_TERRAINBECOMESPSYCHIC
+    STRINGID_TERRAINBECOMESMISTY, STRINGID_TERRAINBECOMESGRASSY, STRINGID_TERRAINBECOMESELECTRIC, STRINGID_TERRAINBECOMESPSYCHIC, STRINGID_TERRAINBECOMESSHADOWY
 };
 
 const u16 gTerrainPreventsStringIds[] =

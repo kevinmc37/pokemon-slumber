@@ -1649,6 +1649,7 @@ enum
     ENDTURN_MISTY_TERRAIN,
     ENDTURN_GRASSY_TERRAIN,
     ENDTURN_PSYCHIC_TERRAIN,
+	ENDTURN_SHADOW_TERRAIN,
     ENDTURN_ION_DELUGE,
     ENDTURN_FAIRY_LOCK,
     ENDTURN_FIELD_COUNT,
@@ -2032,6 +2033,16 @@ u8 DoFieldEndTurnEffects(void)
             {
                 gFieldStatuses &= ~(STATUS_FIELD_PSYCHIC_TERRAIN);
                 BattleScriptExecute(BattleScript_PsychicTerrainEnds);
+                effect++;
+            }
+            gBattleStruct->turnCountersTracker++;
+            break;
+		case ENDTURN_SHADOW_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_SHADOW_TERRAIN)
+            {
+                if (gFieldTimers.shadowTerrainTimer == 0 || --gFieldTimers.shadowTerrainTimer == 0)
+                    gFieldStatuses &= ~(STATUS_FIELD_SHADOW_TERRAIN);
+                BattleScriptExecute(BattleScript_ShadowTerrainDamage);
                 effect++;
             }
             gBattleStruct->turnCountersTracker++;
@@ -3487,7 +3498,7 @@ static bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag, u8 *timer)
 {
     if (!(gFieldStatuses & statusFlag))
     {
-        gFieldStatuses &= ~(STATUS_FIELD_MISTY_TERRAIN | STATUS_FIELD_GRASSY_TERRAIN | EFFECT_ELECTRIC_TERRAIN | EFFECT_PSYCHIC_TERRAIN);
+        gFieldStatuses &= ~(STATUS_FIELD_MISTY_TERRAIN | STATUS_FIELD_GRASSY_TERRAIN | EFFECT_ELECTRIC_TERRAIN | EFFECT_PSYCHIC_TERRAIN | EFFECT_SHADOW_TERRAIN);
         gFieldStatuses |= statusFlag;
 
         if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_TERRAIN_EXTENDER)
@@ -6603,7 +6614,7 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
             basePower *= 2;
         break;
     case EFFECT_WEATHER_BALL:
-        if (WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_ANY)
+        if ((WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_ANY) || gFieldStatuses & STATUS_FIELD_SHADOW_TERRAIN)
             basePower *= 2;
         break;
     case EFFECT_PURSUIT:
@@ -6994,6 +7005,8 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN && moveType == TYPE_ELECTRIC && IsBattlerGrounded(battlerAtk) && !(gStatuses3[battlerAtk] & STATUS3_SEMI_INVULNERABLE))
         MulModifier(&modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8) ? UQ_4_12(1.3) : UQ_4_12(1.5));
     if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN && moveType == TYPE_PSYCHIC && IsBattlerGrounded(battlerAtk) && !(gStatuses3[battlerAtk] & STATUS3_SEMI_INVULNERABLE))
+        MulModifier(&modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8) ? UQ_4_12(1.3) : UQ_4_12(1.5));
+	if (gFieldStatuses & STATUS_FIELD_SHADOW_TERRAIN && ((gBattleMoves[move].flags & FLAG_SHADOW_MOVE) || gBattleMoves[move].effect == EFFECT_WEATHER_BALL))
         MulModifier(&modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8) ? UQ_4_12(1.3) : UQ_4_12(1.5));
 
     return ApplyModifier(modifier, basePower);
@@ -7602,7 +7615,7 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
             RecordAbilityBattle(battlerDef, ABILITY_WONDER_GUARD);
         }
     }
-    if (gBattleMoves[move].flags & FLAG_SHADOW_MOVE)
+    if (gBattleMoves[move].flags & FLAG_SHADOW_MOVE) // SHADOW_ODDS effectiveness
     {
         u16 checkShadowMove;
         u32 j;
