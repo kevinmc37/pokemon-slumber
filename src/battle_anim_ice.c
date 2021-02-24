@@ -25,7 +25,6 @@ static void sub_810B848(struct Sprite *);
 static void AnimIcePunchSwirlingParticle(struct Sprite *);
 static void AnimIceBeamParticle(struct Sprite *);
 static void AnimFlickerIceEffectParticle(struct Sprite *);
-static void AnimSwirlingSnowball(struct Sprite *);
 static void AnimSwirlingSnowball_Step2(struct Sprite *);
 static void AnimSwirlingSnowball_End(struct Sprite *);
 static void AnimWiggleParticleTowardsTarget(struct Sprite *);
@@ -741,7 +740,7 @@ static void AnimFlickerIceEffectParticle(struct Sprite *sprite)
 // arg 3: target y offset
 // arg 4: particle speed
 // arg 5: multiple targets? (boolean)
-static void AnimSwirlingSnowball(struct Sprite *sprite)
+void AnimSwirlingSnowball(struct Sprite *sprite)
 {
     int i;
     s16 tempDataHolder[8];

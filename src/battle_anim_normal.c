@@ -16,7 +16,6 @@ static void sub_81159B4(struct Sprite *);
 static void AnimShakeMonOrBattleTerrain(struct Sprite *);
 static void AnimShakeMonOrBattleTerrain_Step(struct Sprite *);
 static void AnimShakeMonOrBattleTerrain_UpdateCoordOffsetEnabled(void);
-static void AnimHitSplatPersistent(struct Sprite *);
 static void AnimHitSplatHandleInvert(struct Sprite *);
 static void AnimConfusionDuck_Step(struct Sprite *);
 static void BlendColorCycle(u8, u8, u8);
@@ -1022,7 +1021,7 @@ void AnimHitSplatBasic(struct Sprite *sprite)
 }
 
 // Same as basic hit splat but takes a length of time to persist for (arg4)
-static void AnimHitSplatPersistent(struct Sprite *sprite)
+void AnimHitSplatPersistent(struct Sprite *sprite)
 {
     StartSpriteAffineAnim(sprite, gBattleAnimArgs[3]);
     if (gBattleAnimArgs[2] == ANIM_ATTACKER)

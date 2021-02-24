@@ -23,7 +23,6 @@ static void sub_810358C(struct Sprite *);
 static void sub_8103620(struct Sprite *);
 static void sub_8103658(struct Sprite *);
 static void sub_8103680(struct Sprite *);
-static void AnimKinesisZapEnergy(struct Sprite *);
 static void AnimSwordsDanceBlade(struct Sprite *);
 static void AnimSwordsDanceBlade_Step(struct Sprite *);
 static void AnimAirWaveProjectile(struct Sprite *);
@@ -37,7 +36,6 @@ static void AnimFallingCoin_Step(struct Sprite *);
 static void AnimBulletSeed(struct Sprite *);
 static void AnimBulletSeed_Step1(struct Sprite *);
 static void AnimBulletSeed_Step2(struct Sprite *);
-static void AnimRazorWindTornado(struct Sprite *);
 static void AnimViceGripPincer(struct Sprite *);
 static void AnimViceGripPincer_Step(struct Sprite *);
 static void AnimGuillotinePincer(struct Sprite *);
@@ -1466,7 +1464,7 @@ static void AnimTask_Withdraw_Step(u8 taskId)
 // arg 0: x pixel offset
 // arg 1: y pixel offset
 // arg 2: vertical flip
-static void AnimKinesisZapEnergy(struct Sprite *sprite)
+void AnimKinesisZapEnergy(struct Sprite *sprite)
 {
     SetSpriteCoordsToAnimAttackerCoords(sprite);
     if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
@@ -1909,7 +1907,7 @@ static void AnimBulletSeed_Step2(struct Sprite *sprite)
 // arg 4: initial wave offset
 // arg 5: wave period (higher means faster wave)
 // arg 6: duration
-static void AnimRazorWindTornado(struct Sprite *sprite)
+void AnimRazorWindTornado(struct Sprite *sprite)
 {
     InitSpritePosToAnimAttacker(sprite, FALSE);
     if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)

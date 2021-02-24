@@ -55,7 +55,7 @@ static const union AnimCmd sAnim_FireSpiralSpread_1[] =
     ANIMCMD_JUMP(0),
 };
 
-static const union AnimCmd *const sAnims_FireSpiralSpread[] =
+const union AnimCmd *const sAnims_FireSpiralSpread[] =
 {
     sAnim_FireSpiralSpread_0,
     sAnim_FireSpiralSpread_1,

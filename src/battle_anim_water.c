@@ -23,7 +23,6 @@ static void AnimAuroraBeamRings(struct Sprite *);
 static void AnimAuroraBeamRings_Step(struct Sprite *);
 void AnimFlyUpTarget(struct Sprite *);
 static void AnimFlyUpTarget_Step(struct Sprite *);
-static void AnimToTargetInSinWave(struct Sprite *);
 static void AnimToTargetInSinWave_Step(struct Sprite *);
 static void AnimHydroCannonCharge(struct Sprite *);
 static void AnimHydroCannonCharge_Step(struct Sprite *);
@@ -824,7 +823,7 @@ static void AnimFlyUpTarget_Step(struct Sprite *sprite)
 }
 
 // For animating undulating beam attacks (e.g. Flamethrower, Hydro Pump, Signal Beam)
-static void AnimToTargetInSinWave(struct Sprite *sprite)
+void AnimToTargetInSinWave(struct Sprite *sprite)
 {
     u16 retArg;
 

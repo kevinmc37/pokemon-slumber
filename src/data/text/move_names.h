@@ -689,6 +689,7 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_SHADOW_HOLD] = _("Shadow Hold"),
     [MOVE_SHADOW_MIST] = _("Shadow Mist"),
     [MOVE_SHADOW_PANIC] = _("Shadow Panic"),
+	[MOVE_SHADOW_RAVE] = _("Shadow Rave"),
     [MOVE_SHADOW_SHED] = _("Shadow Shed"),
     [MOVE_SHADOW_SKY] = _("Shadow Sky"),
     [MOVE_SHADOW_STORM] = _("Shadow Storm"),

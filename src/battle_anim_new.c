@@ -1946,10 +1946,12 @@ static const union AnimCmd sAnimCmdLargeSpike[] =
     ANIMCMD_FRAME(96, 3),
     ANIMCMD_END,
 };
+
 static const union AnimCmd *const sAnimCmdTable_LargeSpike[] =
 {
     sAnimCmdLargeSpike,
 };
+
 const struct SpriteTemplate gPrecipiceBladesSpikeTemplate =
 {
     .tileTag = ANIM_TAG_LARGE_SPIKE,
@@ -1966,10 +1968,12 @@ static const union AffineAnimCmd sSpriteAffineAnim_LargeHailRock[] =
     AFFINEANIMCMD_FRAME(256, 256, 0, 1), //Double sprite size
     AFFINEANIMCMD_END,
 };
+
 static const union AffineAnimCmd* const sSpriteAffineAnimTable_LargeHailRock[] =
 {
     sSpriteAffineAnim_LargeHailRock,
 };
+
 const struct SpriteTemplate gPrecipiceBladesLargeSpikeTemplate =
 {
     .tileTag = ANIM_TAG_LARGE_SPIKE,
@@ -2453,29 +2457,6 @@ const struct SpriteTemplate gPsychicTerrainOrbsTemplate =
 };
 
 const struct SpriteTemplate gPsychicTerrainStarTemplate =
-{
-    .tileTag = ANIM_TAG_GREEN_SPARKLE,
-    .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gMoonlightSparkleAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimOrbitScatter
-};
-
-//shadow terrain
-const struct SpriteTemplate gShadowTerrainOrbsTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
-    .anims = gPowerAbsorptionOrbAnimTable,
-    .images = NULL,
-    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
-    .callback = AnimOrbitFast
-};
-
-const struct SpriteTemplate gShadowTerrainStarTemplate =
 {
     .tileTag = ANIM_TAG_GREEN_SPARKLE,
     .paletteTag = ANIM_TAG_POISON_BUBBLE,
@@ -3545,7 +3526,6 @@ const struct SpriteTemplate gPhotonGeyserZapBallTemplate =
     .callback = TranslateAnimSpriteToTargetMonLocation
 };
 
-
 //// GEN 8
 //snipe shot
 static const union AffineAnimCmd sSpriteAffineAnim_LargeSpikePointedLeft[] =
@@ -4083,6 +4063,294 @@ const struct SpriteTemplate gSteelBeamSpikeShardTemplate =
     .images = NULL,
     .affineAnims = gAffineAnims_ShadowBall,
     .callback = AnimDirtScatter
+};
+
+//// Shadow Moves
+// Shadow Rush
+const struct SpriteTemplate gShadowRandomPosHitSplatSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IMPACT,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_HitSplat,
+    .callback = AnimHitSplatRandom,
+};
+
+// Shadow Blast
+const struct SpriteTemplate gShadowBlastTornadoSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GUST,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gRazorWindTornadoAffineAnimTable,
+    .callback = AnimRazorWindTornado,
+};
+
+const struct SpriteTemplate gShadowAirWaveCrescentSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_AIR_WAVE_2,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineOff_ObjNormal_32x16,
+    .anims = gAffineAnims_AirWaveCrescent,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAirWaveCrescent,
+};
+
+const struct SpriteTemplate gShadowCuttingSliceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CUT,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
+    .anims = gCuttingSliceAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimCuttingSlice,
+};
+
+// Shadow Blitz
+const struct SpriteTemplate gShadowBlitzProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PURPLE_JAB,
+    .paletteTag = ANIM_TAG_BLACK_SMOKE,
+    .oam = &gOamData_AffineDouble_ObjBlend_32x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPoisonJabProjectile,
+};
+
+const struct SpriteTemplate gShadowBlitzBasicHitSplatSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IMPACT,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_HitSplat,
+    .callback = AnimHitSplatBasic,
+};
+
+// Shadow Bolt
+const struct SpriteTemplate gShadowSparkElectricitySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARK_2,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSparkElectricity,
+};
+
+const struct SpriteTemplate gGrowingShadowBoltOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineNormal_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_GrowingElectricOrb,
+    .callback = AnimGrowingChargeOrb,
+};
+
+const struct SpriteTemplate gShadowBoltBallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BLACK_BALL_2,
+    .paletteTag = ANIM_TAG_BLACK_BALL_2,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = TranslateAnimSpriteToTargetMonLocation,
+};
+
+const struct SpriteTemplate gShadowBoltSparkSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARK_2,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_FlashingSpark,
+    .callback = AnimZapCannonSpark,
+};
+
+const struct SpriteTemplate gShadowElectricitySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARK_2,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimElectricity,
+};
+
+// Shadow Break
+const struct SpriteTemplate gShadowBreakBigScratchSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PURPLE_SWIPE,
+    .paletteTag = ANIM_TAG_WISP_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .anims = gAnims_RevengeBigScratch,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimRevengeScratch,
+};
+
+const struct SpriteTemplate gShadowBreakPersistHitSplatSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IMPACT,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_HitSplat,
+    .callback = AnimHitSplatPersistent,
+};
+
+// Shadow Chill
+const struct SpriteTemplate gShadowChillSwirlingSnowballSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ICE_CRYSTALS,
+    .paletteTag = ANIM_TAG_WISP_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gAnims_Snowball,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSwirlingSnowball,
+};
+
+const struct SpriteTemplate gShadowChillIceCrystalSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ICE_CRYSTALS,
+    .paletteTag = ANIM_TAG_WISP_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gAnims_BlizzardIceCrystal,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimMoveParticleBeyondTarget,
+};
+
+// Shadow Down
+const struct SpriteTemplate gShadowDownZapEnergySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ALERT,
+    .paletteTag = ANIM_TAG_PURPLE_FLAME,
+    .oam = &gOamData_AffineOff_ObjNormal_32x16,
+    .anims = gKinesisZapEnergyAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimKinesisZapEnergy,
+};
+
+const struct SpriteTemplate gShadowDownRingsTemplate =
+{
+    .tileTag = ANIM_TAG_THIN_RING,
+    .paletteTag = ANIM_TAG_PURPLE_FLAME,
+    .oam = &gOamData_AffineDouble_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gThinRingExpandingAffineAnimTable,
+    .callback = SpriteCB_SpriteOnMonForDuration
+};
+
+// Shadow Fire
+const struct SpriteTemplate gShadowFireSpreadSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SMALL_EMBER,
+    .paletteTag = ANIM_TAG_PURPLE_FLAME,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_FireSpiralSpread,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimFireSpread,
+};
+
+const struct SpriteTemplate gShadowFireFlameSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SMALL_EMBER,
+    .paletteTag = ANIM_TAG_PURPLE_FLAME,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gAnims_FlamethrowerFlame,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimToTargetInSinWave,
+};
+
+// Shadow Hold
+const struct SpriteTemplate gShadowHoldArmHitTemplate =
+{
+    .tileTag = ANIM_TAG_ASSURANCE_HAND,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gAnims_HandOrFoot,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_SpriteOnMonForDuration
+};
+
+// Shadow Rave
+const struct SpriteTemplate gShadowRaveSpikeTemplate =
+{
+    .tileTag = ANIM_TAG_LARGE_SPIKE,
+    .paletteTag = ANIM_TAG_PURPLE_FLAME,
+    .oam = &gOamData_AffineOff_ObjNormal_32x64,
+    .anims = sAnimCmdTable_LargeSpike,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_SpriteOnMonForDuration
+};
+
+const struct SpriteTemplate gShadowRavePlumeTemplate =
+{
+    .tileTag = ANIM_TAG_FIRE_PLUME,
+    .paletteTag = ANIM_TAG_PURPLE_FLAME,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gAnims_DragonRageFirePlume,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_AnimSpriteOnSelectedMonPos
+};
+
+// Shadow Sky
+const struct SpriteTemplate gShadowTerrainOrbsTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .images = NULL,
+    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
+    .callback = AnimOrbitFast
+};
+
+const struct SpriteTemplate gShadowTerrainStarTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPARKLE,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gMoonlightSparkleAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimOrbitScatter
+};
+
+// Shadow Wave
+const struct SpriteTemplate gShadowWaveRingSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GOLD_RING,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_TranslateAnimSpriteToTargetMonLocationDoubles,
 };
 
 //// functions

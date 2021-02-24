@@ -250,6 +250,7 @@ void AnimThoughtBubble(struct Sprite* sprite);
 void AnimTranslateLinearSingleSineWave(struct Sprite* sprite);
 void AnimGrantingStars(struct Sprite* sprite);
 void AnimFollowMeFinger(struct Sprite* sprite);
+void AnimPoisonJabProjectile(struct Sprite *sprite);
 extern const union AnimCmd *const gRazorLeafParticleAnimTable[];
 extern const union AnimCmd *const gPowerAbsorptionOrbAnimTable[];
 extern const union AffineAnimCmd *const gPowerAbsorptionOrbAffineAnimTable[];
@@ -282,6 +283,7 @@ void AnimOrbitFast(struct Sprite *sprite);
 void AnimOrbitScatter(struct Sprite *sprite);
 void AnimAngerMark(struct Sprite *sprite);
 void AnimHyperVoiceRing(struct Sprite *sprite);
+void AnimKinesisZapEnergy(struct Sprite *);
 extern const union AffineAnimCmd *const gThinRingShrinkingAffineAnimTable[];
 extern const union AffineAnimCmd *const gThinRingExpandingAffineAnimTable[];
 extern const union AnimCmd *const gExplosionAnimTable[];
@@ -291,6 +293,7 @@ extern const union AffineAnimCmd *const gWaterPulseRingAffineAnimTable[];
 extern const union AffineAnimCmd *const gHyperVoiceRingAffineAnimTable[];
 extern const union AnimCmd *const gCoinAnimTable[];
 extern const union AffineAnimCmd *const gHiddenPowerOrbAffineAnimTable[];
+extern const union AnimCmd *const gKinesisZapEnergyAnimTable[];
 
 // battle_anim_effects_3.c
 void AnimBlackSmoke(struct Sprite *sprite);
@@ -304,6 +307,7 @@ extern const union AnimCmd *const gEclipsingOrbAnimTable[];
 void AnimWaterPulseRing(struct Sprite *sprite);
 void AnimSmallBubblePair(struct Sprite *sprite);
 void AnimWaterPulseBubble(struct Sprite *sprite);
+void AnimToTargetInSinWave(struct Sprite *);
 extern const union AnimCmd *const gAnims_WaterBubbleProjectile[];
 extern const union AnimCmd *const gAnims_FlamethrowerFlame[];
 extern const union AnimCmd *const gAnims_WaterPulseBubble[];
@@ -316,9 +320,11 @@ void AnimFlyBallUp(struct Sprite *sprite);
 void AnimFlyBallAttack(struct Sprite *sprite);
 void AnimFlyBallAttack_Step(struct Sprite *sprite);
 void AnimFlyBallUp_Step(struct Sprite *sprite);
+void AnimRazorWindTornado(struct Sprite *sprite);
 extern const union AnimCmd *const gAffineAnims_AirWaveCrescent[];
 extern const union AffineAnimCmd *const gAffineAnims_FlyBallUp[];
 extern const union AffineAnimCmd *const gAffineAnims_FlyBallAttack[];
+extern const union AffineAnimCmd *const gRazorWindTornadoAffineAnimTable[];
 
 // battle_anim_poison.c
 void AnimSludgeBombHitParticle(struct Sprite *);
@@ -412,6 +418,7 @@ void AnimFlashingHitSplat_Step(struct Sprite *sprite);
 void AnimHitSplatRandom(struct Sprite *sprite);
 void AnimCrossImpact(struct Sprite *sprite);
 void AnimHitSplatOnMonEdge(struct Sprite *sprite);
+void AnimHitSplatPersistent(struct Sprite *sprite);
 
 // battle_anim_electric.c
 void AnimThunderWave(struct Sprite *sprite);
@@ -421,6 +428,7 @@ void AnimSparkElectricity(struct Sprite *sprite);
 void AnimElectricPuff(struct Sprite *sprite);
 void AnimSparkElectricityFlashing(struct Sprite *sprite);
 void AnimGrowingShockWaveOrb(struct Sprite *sprite);
+void AnimElectricity(struct Sprite *sprite);
 extern const union AffineAnimCmd *const gAffineAnims_GrowingElectricOrb[];
 extern const union AffineAnimCmd *const gAffineAnims_FlashingSpark[];
 extern const union AnimCmd *const gAnims_ThunderboltOrb[];
@@ -468,6 +476,7 @@ void AnimThrowMistBall(struct Sprite *sprite);
 void AnimMoveParticleBeyondTarget(struct Sprite *sprite);
 void AnimIceEffectParticle(struct Sprite *sprite);
 void AnimSwirlingSnowball_Step1(struct Sprite *sprite);
+void AnimSwirlingSnowball(struct Sprite *);
 extern const union AnimCmd *const gAnims_Snowball[];
 extern const union AffineAnimCmd *const gAffineAnims_IceCrystalHit[];
 extern const union AnimCmd *const gAnims_IceCrystalLarge[];
@@ -478,6 +487,7 @@ extern const union AnimCmd *const gAnims_BlizzardIceCrystal[];
 void AnimFireSpread(struct Sprite *sprite);
 void AnimFireSpiralOutward(struct Sprite *sprite);
 extern const union AnimCmd *const gAnims_FireBlastCross[];
+extern const union AnimCmd *const sAnims_FireSpiralSpread[];
 
 // battle_anim_dragon.c
 extern const union AnimCmd *const gAnims_DragonBreathFire[];

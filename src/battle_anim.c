@@ -18,6 +18,7 @@
 #include "task.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_config.h"
+#include "constants/moves.h"
 
 #define ANIM_SPRITE_INDEX_COUNT 8
 
@@ -2193,6 +2194,12 @@ void DoMoveAnim(u16 move)
                 gBattleAnimTarget = 0;
         }
     }
+	if (move == MOVE_SHADOW_RAVE && GET_BATTLER_SIDE(gBattleAnimTarget) != B_SIDE_OPPONENT)
+	    gBattleAnimTarget = 0;
+	
+	if (move == MOVE_SHADOW_SHED)
+	    gBattleAnimTarget = 0;
+	
     LaunchBattleAnimation(gBattleAnims_Moves, move, TRUE);
 }
 
